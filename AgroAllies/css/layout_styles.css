@@ -1,0 +1,75 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.menu, .menu-items, .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    background-color: #ffffff;
+    width: 22rem;
+    align-items: flex-start; /* Center content horizontally */
+    padding-top: 3.125rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    margin-left: 1rem;
+    margin-bottom: 3.125rem; /* Adds spacing between logo and menu items */
+}
+
+.hidemenu-button {
+    margin-left: 3.125rem;
+    z-index: 1; /* Set a higher z-index value to bring the button to the front */
+}
+
+.hidemenu-icon {
+    width: 3.25rem;
+    height: 3.188rem;
+}
+
+.menu-items {
+    align-items: center;
+    justify-content: space-around;; 
+}
+
+
+.content {
+    background-color: #e3e9e3;
+    flex: 1; 
+    height: 100%;
+    overflow-y: auto; /* Add scrolling if needed */
+}
+
+ul {
+    list-style-type: none
+}
+
+.menu-names {
+    font-family: Montserrat, serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #22651D;
+    display: flex;
+    align-items: center; /* Center text and icon horizontally */
+    margin-bottom: 2.5rem; /* Adjust the margin between items as needed */
+}
+
+.menu-icons {
+    margin-right: 1rem;
+    width: 2.188rem;
+    height: 2.188rem;
+}
