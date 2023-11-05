@@ -4,10 +4,18 @@ body, html {
     height: 100%;
 }
 
-.container {
+.container-fluid {
     display: flex;
     height: 100vh;
+    padding-right: 0;
+    padding-left: 0;
 }
+
+.no-padding {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 
 .menu, .menu-items, .content {
     display: flex;
@@ -21,33 +29,35 @@ body, html {
     padding-top: 3.125rem;
 }
 
-.row {
+
+.header {
+    position: relative; /* Ensures the z-index property works */
     display: flex;
     flex-direction: row;
-}
-
-.logo {
     margin-left: 1rem;
     margin-bottom: 3.125rem; /* Adds spacing between logo and menu items */
 }
 
-.hidemenu-button {
-    margin-left: 3.125rem;
-    z-index: 1; /* Set a higher z-index value to bring the button to the front */
+.hidemenu-btn {
+    position: relative; /* Ensures the z-index property works */
+    z-index: 1; /* Adjust the z-index value */
 }
 
 .hidemenu-icon {
-    width: 3.25rem;
-    height: 3.188rem;
+    margin-left: 1.7rem;
+    margin-top: -1rem;;
+    z-index: 1;
 }
 
 .menu-items {
-    align-items: center;
-    justify-content: space-around;; 
+    justify-content: space-evenly; 
+    padding-left: 2rem;
 }
 
 
 .content {
+    padding-right: 0;
+    padding-left: 0;
     background-color: #e3e9e3;
     flex: 1; 
     height: 100%;
@@ -58,18 +68,39 @@ ul {
     list-style-type: none
 }
 
+a.nav-link {
+    color:#22651D;
+}
+
+.menu-items .nav-item .nav-link {
+    padding-left: 0;
+    display: flex; /* Allow the flexbox layout */
+    align-items: center; /* Vertically center the content */
+}
+
 .menu-names {
     font-family: Montserrat, serif;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #22651D;
     display: flex;
-    align-items: center; /* Center text and icon horizontally */
-    margin-bottom: 2.5rem; /* Adjust the margin between items as needed */
+    align-items: center;
 }
 
 .menu-icons {
-    margin-right: 1rem;
-    width: 2.188rem;
-    height: 2.188rem;
+    color: #22651D;
+    margin-right: 1rem; /* Add spacing between the icon and text */
 }
+
+.custom-pills .nav-link.active,.menu-icons.active, .custom-pills .show > .nav-link {
+    background-color: #22651D !important;
+    color: white;
+    width: 4.5rem;
+}
+
+
+.custom-pills .nav-link.active,
+.custom-pills .show > .nav-link {
+    justify-content: center;
+    border-radius: 0.8rem; /* Adjust the value as needed */
+} 
