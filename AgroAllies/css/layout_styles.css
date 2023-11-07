@@ -51,7 +51,7 @@ body, html {
 
 .menu-items {
     justify-content: space-evenly; 
-    padding-left: 2rem;
+    padding-left: 0;
 }
 
 
@@ -89,7 +89,7 @@ a.nav-link {
 
 .menu-icons {
     color: #22651D;
-    margin-right: 1rem; /* Add spacing between the icon and text */
+    margin-right: 0.5rem; /* Add spacing between the icon and text */
 }
 
 .custom-pills .nav-link.active,.menu-icons.active, .custom-pills .show > .nav-link {
