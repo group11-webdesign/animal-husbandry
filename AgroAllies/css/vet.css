@@ -1,0 +1,49 @@
+
+.main {
+    margin: 4rem;
+}
+
+.search-bar {
+    width: 50rem; /* Adjust the width as needed */
+}
+
+.vet-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.vet-card-card {
+    padding: 2rem;
+    border-radius: 20px;
+    
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h3, h1 {
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+    color: #22651D;
+}
+
+a.btstyle {
+    background-color: #22651D;
+    color: white;
+    font-family: 'Inter', serif;
+    border: none;
+}
+
+.section {
+    padding-top: 2rem;
+}
+
+.map {
+    margin-top: 2rem;
+}
