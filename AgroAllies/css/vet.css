@@ -1,8 +1,3 @@
-
-.main {
-    margin: 4rem;
-}
-
 .search-bar {
     width: 50rem; /* Adjust the width as needed */
 }
@@ -13,21 +8,20 @@
     justify-content: space-between;
 }
 
-.vet-card-card {
-    padding: 2rem;
-    border-radius: 20px;
-    
-}
 
 h1 {
     font-size: 2.5rem;
 }
 
-h3 {
+.heading1 {
+    font-size: 2.25rem;
+}
+
+.heading2 {
     font-size: 1.5rem;
 }
 
-h3, h1 {
+.heading1, .heading2 {
     font-family: 'Montserrat', serif;
     font-weight: 700;
     color: #22651D;
@@ -46,4 +40,13 @@ a.btstyle {
 
 .map {
     margin-top: 2rem;
+}
+
+.card-img-top {
+    height: 15rem;
+    width: 15rem;
+}
+
+.card-text, .card-title {
+    font-family: 'Inter', serif;
 }
