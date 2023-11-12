@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -92,7 +94,7 @@
 
         <div class="content">
             <div class="main">
-                <p class="heading1">Veterinary</p>
+                <h1>Veterinary</h1>
 
                 <form class="d-flex search-bar" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search by Location" aria-label="Search">
@@ -104,42 +106,62 @@
                 </div>
                 
                 <div class="section">
-                    <p class="heading2">Vets Near You</p>
+                    <h3>Vets Near You</h3>
+        
                     <div class="vet-cards">
-                        <div class="row row-cols-1 row-cols-md-2 g-4">
-                            <div class="col">
-                            <div class="card">
-                                <img src="../assets/images/vet1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    Open by 9:00am <br>
-                                    Closes by 5:00pm <br>
-                                    13,Lorem ipsum sper kildi, 
-                                    Lagos Nigeria
-                                </p>
-                                <a href="#" class="btn btn-primary btstyle">Visit</a>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="col">
-                            <div class="card">
-                                <img src="../assets/images/vet2.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    Open by 9:00am <br>
-                                    Closes by 5:00pm <br>
-                                    13,Lorem ipsum sper kildi, 
-                                    Lagos Nigeria
-                                </p>
-                                <a href="#" class="btn btn-primary btstyle">Visit</a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
+                    <?php
+
+$connection = mysqli_connect("localhost", "root", "", "agroallies");
+
+if (!$connection) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+
+$query = "SELECT * FROM `vets`";
+$result = mysqli_query($connection, $query);
+
+
+if (!$result) {
+    die("Query failed: " . mysqli_error($connection));
+    
+}
+
+
+
+while ($row = mysqli_fetch_assoc($result)) {
+    echo "
+    <div class=\"card mb-3 vet-card-card\" style=\"max-width: 400px;\">
+        <div class=\"row g-0\">
+        <div class=\"col-md-4\">
+            <img src=\"...\" class=\"img-fluid rounded-start\" alt=\"...\">
+        </div>
+        <div class=\"col-md-8\">
+            <div class=\"card-body\">
+            <h5 class=\"card-title\">" . $row["vetname"] . "</h5>
+            <p class=\"card-text\">
+                Open by " . $row["vetopen"] . "<br>
+                Closes by " . $row["vetclose"] . "<br>
+                " . $row["vetadd"] . "
+            </p>
+            <p class=\"card-text\"><small class=\"text-body-secondary\">Last updated 3 mins ago</small></p>
+            <a href=\"\" class=\"btn btn-primary btstyle\">Visit</a>
+            </div>
+        </div>
+        </div>
+    </div>";
+}
+
+
+// Close the database connection
+mysqli_close($connection);
+?>
+
+                       
+                    </div>
                 </div>
             </div>
+            
            
         </div>
 
