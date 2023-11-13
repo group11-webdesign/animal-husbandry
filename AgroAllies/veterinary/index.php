@@ -133,7 +133,7 @@ function showHint(str) {
         if (query.trim() !== '') {
             document.getElementById('head').innerText = "Search Results";
             var xmlhttp = new XMLHttpRequest();
-            vetsSection.style.display = 'none';  // Hide the vets section
+            vetsSection.style.display = 'none'; 
         searchSection.style.display = 'block';
            ;
             xmlhttp.onreadystatechange = function () {
@@ -206,8 +206,7 @@ searchSection.appendChild(resultBox);
         } else {
 
             document.getElementById('head').innerText = "Vets Near You";
-            vetsSection.style.display = 'block';  // Show the vets section
-        searchSection.style.display = 'none';
+            vetsSection.style.display = 'block'; 
             
         }
     }
