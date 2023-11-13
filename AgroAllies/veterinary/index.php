@@ -14,12 +14,28 @@
     <link rel="stylesheet" href="../css/vet.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/73320f1c27.js" crossorigin="anonymous"></script>
-
+    <script>
+function showHint(str) {
+  if (str.length == 0) {
+    document.getElementById("searchbox").innerHTML = "";
+    return;
+  } else {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("txtHint").innerHTML = this.responseText;
+      }
+    };
+    xmlhttp.open("GET", "gethint.php?q=" + str, true);
+    xmlhttp.send();
+  }
+}
+</script>
 
 </head>
 
 <body>
-    <!-- Your content goes here -->
+  
     <div class="container-fluid no-padding">
 
         <div class="menu nav flex-column">
@@ -96,10 +112,46 @@
             <div class="main">
                 <h1>Veterinary</h1>
 
-                <form class="d-flex search-bar" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search by Location" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
-                </form>
+          
+    <form class="d-flex search-bar" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search by Location" aria-label="Search" onkeyup="showSearchResults(this.value)">
+        <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+    </form>
+
+    <div class="result">
+
+    </div>
+
+    <script>
+    function showSearchResults(query) {
+        const resultContainer = document.querySelector('.result');
+        resultContainer.innerHTML = ''; 
+
+        if (query.trim() !== '') {
+            var xmlhttp = new XMLHttpRequest();
+
+            xmlhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    const response = JSON.parse(this.responseText);
+
+
+                    response.forEach(result => {
+                        const resultBox = document.createElement('div');
+                        resultBox.classList.add('result-box');
+                        resultBox.textContent = result;
+                        resultContainer.appendChild(resultBox);
+                    });
+                }
+            };
+
+            xmlhttp.open("GET", "search.php?q=" + query, true);
+            xmlhttp.send();
+        } else {
+
+            resultContainer.textContent = 'Please enter a search query';
+        }
+    }
+</script>
 
                 <div class="map">
                     <img src="../assets/images/map.svg" alt="Placeholder map" width="800" height="400">
@@ -153,7 +205,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 }
 
 
-// Close the database connection
+
 mysqli_close($connection);
 ?>
 
