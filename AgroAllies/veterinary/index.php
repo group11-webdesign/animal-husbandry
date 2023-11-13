@@ -153,9 +153,6 @@ function showHint(str) {
     }
 </script>
 
-                <div class="map">
-                    <img src="../assets/images/map.svg" alt="Placeholder map" width="800" height="400">
-                </div>
                 
                 <div class="section">
                     <h3>Vets Near You</h3>
