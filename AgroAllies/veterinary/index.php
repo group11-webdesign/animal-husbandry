@@ -14,23 +14,7 @@
     <link rel="stylesheet" href="../css/vet.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/73320f1c27.js" crossorigin="anonymous"></script>
-    <script>
-function showHint(str) {
-  if (str.length == 0) {
-    document.getElementById("searchbox").innerHTML = "";
-    return;
-  } else {
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("txtHint").innerHTML = this.responseText;
-      }
-    };
-    xmlhttp.open("GET", "gethint.php?q=" + str, true);
-    xmlhttp.send();
-  }
-}
-</script>
+    
 
 </head>
 
@@ -139,7 +123,11 @@ function showHint(str) {
             xmlhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     const response = JSON.parse(this.responseText);
-
+    
+                 if(response == ''){
+                    searchSection.innerHTML = '<h4> No Vets Found</h4>';
+                    
+                 }
 
                     response.forEach(result => {
 const resultBox = document.createElement('div');
