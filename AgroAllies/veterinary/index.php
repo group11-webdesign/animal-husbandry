@@ -114,7 +114,7 @@ function showHint(str) {
 
           
     <form class="d-flex search-bar" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search by Location" aria-label="Search" onkeyup="showSearchResults(this.value)">
+        <input class="form-control me-2" type="search" placeholder="Search by Name" aria-label="Search" onkeyup="showSearchResults(this.value)">
         <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
     </form>
 
@@ -126,20 +126,77 @@ function showHint(str) {
     function showSearchResults(query) {
         const resultContainer = document.querySelector('.result');
         resultContainer.innerHTML = ''; 
-
+       
+        const vetsSection = document.getElementById('vets');
+    const searchSection = document.getElementById('res');
+    searchSection.innerHTML = '';
         if (query.trim() !== '') {
+            document.getElementById('head').innerText = "Search Results";
             var xmlhttp = new XMLHttpRequest();
-
+            vetsSection.style.display = 'none';  // Hide the vets section
+        searchSection.style.display = 'block';
+           ;
             xmlhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     const response = JSON.parse(this.responseText);
 
 
                     response.forEach(result => {
-                        const resultBox = document.createElement('div');
-                        resultBox.classList.add('result-box');
-                        resultBox.textContent = result;
-                        resultContainer.appendChild(resultBox);
+const resultBox = document.createElement('div');
+resultBox.classList.add('card', 'mb-3', 'vet-card-card');
+resultBox.style.maxWidth = '400px';
+
+const rowDiv = document.createElement('div');
+rowDiv.classList.add('row', 'g-0');
+resultBox.appendChild(rowDiv);
+
+const colImgDiv = document.createElement('div');
+colImgDiv.classList.add('col-md-4');
+rowDiv.appendChild(colImgDiv);
+
+const imgElement = document.createElement('img');
+imgElement.src = '...'; 
+imgElement.classList.add('img-fluid', 'rounded-start');
+imgElement.alt = '...'; 
+colImgDiv.appendChild(imgElement);
+
+const colBodyDiv = document.createElement('div');
+colBodyDiv.classList.add('col-md-8');
+rowDiv.appendChild(colBodyDiv);
+
+const cardBodyDiv = document.createElement('div');
+cardBodyDiv.classList.add('card-body');
+colBodyDiv.appendChild(cardBodyDiv);
+
+const cardTitle = document.createElement('h5');
+cardTitle.classList.add('card-title');
+cardTitle.textContent = result.vetname;
+cardBodyDiv.appendChild(cardTitle);
+
+const cardText = document.createElement('p');
+cardText.classList.add('card-text');
+cardText.innerHTML = `
+    Open by ${result.vetopen}<br>
+    Closes by ${result.vetclose}<br>
+    ${result.vetadd}
+`;
+cardBodyDiv.appendChild(cardText);
+
+const lastUpdatedText = document.createElement('p');
+lastUpdatedText.classList.add('card-text');
+lastUpdatedText.innerHTML = `<small class="text-body-secondary">Last updated 3 mins ago</small>`;
+cardBodyDiv.appendChild(lastUpdatedText);
+
+const visitLink = document.createElement('a');
+visitLink.href = '#'; 
+visitLink.classList.add('btn', 'btn-primary', 'btstyle');
+visitLink.textContent = 'Visit';
+cardBodyDiv.appendChild(visitLink);
+
+
+searchSection.appendChild(resultBox);
+
+                        cardsec
                     });
                 }
             };
@@ -148,16 +205,19 @@ function showHint(str) {
             xmlhttp.send();
         } else {
 
-            resultContainer.textContent = 'Please enter a search query';
+            document.getElementById('head').innerText = "Vets Near You";
+            vetsSection.style.display = 'block';  // Show the vets section
+        searchSection.style.display = 'none';
+            
         }
     }
 </script>
 
                 
                 <div class="section">
-                    <h3>Vets Near You</h3>
-        
-                    <div class="vet-cards">
+                    <h3 id = "head" >Vets Near You</h3>
+                    <div class="vet-cards" id = "res"></div>
+                    <div class="vet-cards" id = "vets">
                     <?php
 
 $connection = mysqli_connect("localhost", "root", "", "agroallies");

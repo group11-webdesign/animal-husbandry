@@ -9,7 +9,7 @@ $vetnames = [];
 // Use mysqli_real_escape_string to prevent SQL injection
 $q = mysqli_real_escape_string($conn, $_REQUEST["q"]);
 
-$query = "SELECT `vetname` FROM `vets`
+$query = "SELECT * FROM `vets`
           WHERE `vetname` LIKE '$q%'";
 
 $result = mysqli_query($conn, $query);
@@ -19,7 +19,7 @@ if (!$result) {
 }
 
 while ($row = mysqli_fetch_assoc($result)) {
-    $vetnames[] = $row["vetname"];
+    $vetnames[] = $row;
 }
 
 echo json_encode($vetnames);
