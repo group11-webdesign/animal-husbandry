@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar-brand {
+    margin-left: 20px;
+}
+
+.navbar-nav {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-item {
+    margin-right: 15px;
+}
+
+.btn-get-started {
+    background-color: #28a745;
+    border-radius: 15px;
+    color: white;
+}
+
+/* Section 1 */
+#section1 {
+    background: url('../assets/images/section1-bg.png') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.section1-text {
+    font-size: 100px;
+    text-align: center;
+}
+
+.btn-get-started-section1 {
+    background-color: #000;
+    border-radius: 15px;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Section 2 */
+#section2 {
+    background: url('../assets/images/section2-bg.png') center/cover no-repeat;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    filter: brightness(50%); /* Dark filter */
+}
+
+.section2-text {
+    font-size: 100px;
+    line-height: 1.2;
+    margin-top: 50px;
+}
+
+.card {
+    margin: 20px;
+    border: none;
+}
+
+/* Section 3 */
+#section3 {
+    background-color: #28a745;
+    color: white;
+    padding: 50px 20px;
+}
+
+.section3-header {
+    text-align: center;
+    font-size: 32px;
+}
+
+.section3-text {
+    font-size: 16px;
+}
+
+.section3-mission {
+    text-align: right;
+}
