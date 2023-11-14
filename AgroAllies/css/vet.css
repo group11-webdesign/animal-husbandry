@@ -50,3 +50,9 @@ a.btstyle {
 .card-text, .card-title {
     font-family: 'Inter', serif;
 }
+.result-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
