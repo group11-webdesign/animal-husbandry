@@ -12,6 +12,82 @@ body {
     width: 100%;
 }
 
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background: #22651D;
+    border: none;
+    border-radius: 100%;
+    padding: 10px;
+    padding-top: 15px;
+    border: none;
+    cursor: pointer;
+    }
+
+    #btn-back-to-top i {
+        font-size: 24px; 
+        color: white; 
+    }
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+    position: sticky;
+}
+
+.navbar-brand {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.navbar-nav {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+a.nav-link {
+    font-family: 'Inter', serif;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.nav-underline .nav-link.active {
+    border-bottom: 2px solid #22651D ; */
+}
+
+.sign-in-btn {
+    font-family: 'Inter', serif;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-color: #22651D;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-item {
+    margin-right: 30px;
+}
+
 .header__container {
     display: flex;
     flex-flow: column;
@@ -41,6 +117,8 @@ body {
 
 .header__image__container h1 {
     font-size: 3rem;
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
 }
 
 .header__image__container p {
@@ -60,6 +138,11 @@ body {
     padding: 24px;
     font-size: 1.1rem;
     text-align: center;
+    font-family: 'Inter';
+}
+
+.header__text__container span {
+    font-weight: 700;
 }
 
 .farms__container {
@@ -71,6 +154,11 @@ body {
     max-width: 1300px;
     width: 100%;
     align-self: center;
+}
+
+.farms__container h1 {
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
 }
 
 .farms__content {
