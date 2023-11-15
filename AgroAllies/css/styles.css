@@ -1,20 +1,21 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #ffffff;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    position: fixed;
+    justify-content: space-between;
     z-index: 1;
+    position: sticky;
 }
 
 .navbar-brand {
     margin-left: 20px;
+    margin-top: 20px;
 }
 
 .navbar-nav {
@@ -23,56 +24,107 @@ body {
     flex-direction: row;
 }
 
+a.nav-link {
+    font-family: 'Inter', serif;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.sign-in-btn {
+    font-family: 'Inter', serif;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-color: #22651D;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
 ul {
     list-style: none;
 }
 
 .nav-item {
-    margin-right: 15px;
+    margin-right: 30px;
 }
 
-.btn-get-started {
-    background-color: #28a745;
-    border-radius: 15px;
-    color: white;
+.sections {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Section 1 */
 #section1 {
-    background: url('../assets/images/section1-bg.png') center/cover no-repeat;
+    background: url('../assets/images/section1-bg.jpg') ;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    
+}
+
+.section1-a {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
 }
 
 .section1-text {
+    padding-top: 100px;
     font-size: 100px;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    font-family: 'Montserrat', serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .btn-get-started-section1 {
     background-color: #000;
-    border-radius: 15px;
+    border-radius: 25px;
+    border: none;
     color: white;
     margin-top: 20px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Inter', serif;
 }
 
 /* Section 2 */
 #section2 {
     background: url('../assets/images/section2-bg.png') center/cover no-repeat;
     height: 100vh;
-    color: white;
     text-align: center;
-    filter: brightness(50%); /* Dark filter */
 }
+
 
 .section2-text {
     font-size: 100px;
     line-height: 1.2;
     margin-top: 50px;
+    padding-top: 60px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 100px;
 }
 
 .card {
@@ -80,9 +132,23 @@ ul {
     border: none;
 }
 
+.card-body {
+    font-family: 'Montserrat', serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.card-body-header {
+    font-family: 'Montserrat', serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
 /* Section 3 */
 #section3 {
-    background-color: #28a745;
+    background-color: black;
     color: white;
     padding: 50px 20px;
 }
@@ -90,12 +156,40 @@ ul {
 .section3-header {
     text-align: center;
     font-size: 32px;
+    font-family: 'Montserrat', serif;
+    font-weight: bold;
 }
 
 .section3-text {
-    font-size: 16px;
+    font-family: 'Montserrat', serif;
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 70px;
 }
 
 .section3-mission {
     text-align: right;
+}
+
+.section3-graphic1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section3-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#section4 {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.section4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
