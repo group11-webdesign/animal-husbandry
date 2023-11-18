@@ -6,7 +6,7 @@ if (!$conn) {
 
 $vetnames = [];
 
-// Use mysqli_real_escape_string to prevent SQL injection
+
 $q = mysqli_real_escape_string($conn, $_REQUEST["q"]);
 
 $query = "SELECT * FROM `vets`
@@ -24,6 +24,5 @@ while ($row = mysqli_fetch_assoc($result)) {
 
 echo json_encode($vetnames);
 
-// Close the database connection
 mysqli_close($conn);
 ?>
