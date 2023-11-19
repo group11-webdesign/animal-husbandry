@@ -1,16 +1,17 @@
 <?php
-$conn = mysqli_connect("localhost", "root", "", "agroallies");
+$conn = mysqli_connect("localhost", "root", "", "AgroAllies");
 if (!$conn) {
     die("Connection error");
+    
 }
 
-$vetnames = [];
+$disease = [];
 
 
 $q = mysqli_real_escape_string($conn, $_REQUEST["q"]);
 
-$query = "SELECT * FROM `vets`
-          WHERE `vetname` LIKE '$q%'";
+$query = "SELECT * FROM `Disease`
+          WHERE `Dname` LIKE '%$q%'";
 
 $result = mysqli_query($conn, $query);
 
@@ -19,11 +20,11 @@ if (!$result) {
 }
 
 while ($row = mysqli_fetch_assoc($result)) {
-    $vetnames[] = $row;
+    $disease[] = $row;
 }
 
-echo json_encode($vetnames);
+echo json_encode($disease);
 
-// Close the database connection
+
 mysqli_close($conn);
 ?>

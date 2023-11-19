@@ -12,10 +12,47 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/73320f1c27.js" crossorigin="anonymous"></script>
 
+    <script>
+       function showResult(query) {
+    var resultContainer = document.querySelector('.result');
+    resultContainer.innerHTML = '';
+    
+    if (query.trim() !== '') {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4) {
+                if (this.status == 200) {
+                    
+                    try {
+                        const response = JSON.parse(this.responseText);
 
+                        if (response.length === 0) {
+                            resultContainer.innerHTML = '<h4>No Vets Found</h4>';
+                        
+                        } else {
+                            response.forEach(function (result) {
+                                resultContainer.innerHTML += '<p>' + result.Dname + ' '+  result.Dinfo; ' </p>';
+                            });
+                        }
+                    } catch (error) {
+                        console.error('Error parsing JSON: ' + error.message);
+                    }
+                } else {
+                    console.error('HTTP error: ' + this.status);
+                }
+            }
+        };
+
+        xmlhttp.open('GET', 'search.php?q='+ query, true);
+        xmlhttp.send();
+    }
+}
+
+      </script>
 </head>
 
 <body>
+
     <!-- Your content goes here -->
     <div class="container-fluid no-padding">
 
@@ -87,9 +124,9 @@
             <div class="main">
 
                 <p class="heading1">Encyclopedia</p>
-
+  
                 <ul class="nav nav-underline mb-4">
-                    <li class="nav-item">
+                    <li class="nav-item">  
                       <a class="nav-link active" aria-current="page" href="../encyclopedia/diseases.html">Animal Diseases</a>
                     </li>
                     <li class="nav-item">
@@ -98,16 +135,19 @@
                 </ul>
 
                 <form class="d-flex search-bar" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search Animal Diseases" aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Search Animal Diseases" aria-label="Search" onkeyup="showResult(this.value)">
                     <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
                 </form>
+                <div class="result">
 
+    </div>
             </div>
            
         </div>
 
       </div>
+
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
-</html>
+</html> 

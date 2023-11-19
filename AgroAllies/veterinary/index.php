@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  
+
     <div class="container-fluid no-padding">
 
         <div class="menu nav flex-column">
@@ -121,7 +121,7 @@
                  if(response == ''){
                     searchSection.innerHTML = '<h4> No Vets Found</h4>';
                     
-                 }
+                }
 
                     response.forEach(result => {
 const resultBox = document.createElement('div');
