@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Your Own Feed</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="AgroAllies/css/layout_styles.css">
+    <link rel="stylesheet" href="AgroAllies/css/mkyfd_styles.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/73320f1c27.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+   
+    <div class="container-fluid no-padding">
+
+        <div class="menu nav flex-column">
+            <div class="header">
+                <div class="logo">
+                   <img src="AgroAllies/assets/AgroAllies.svg" alt="AgroAllies Logo">
+
+                </div>
+                <a class="btn hidemenu-btn" href="#" role="button">
+                    <img class="hidemenu-icon" src="AgroAllies/assets/buttons/hidemenu button.svg" alt="Hidemenu Button">
+                </a>
+            </div>
+
+            <div class="menu-items">
+                <ul class="nav-pills custom-pills nav-fill justify-content-end">
+                    <li class="nav-item menu-names">
+                       <a class="nav-link" aria-current="page" href="">
+                            <i class="fas fa-info-circle fa-lg menu-icons "></i>
+                            General Info
+                        </a>
+                    </li>
+                    <li class="nav-item menu-names">
+                        <a class="nav-link" aria-current="page" href="../weather/weather.html">
+                            <i class="fas fa-cloud fa-lg menu-icons"></i>
+                            Weather
+                        </a>
+                    </li>
+                    <li class="nav-item menu-names">
+                        <a class="nav-link" href="../finance/finance.html">
+                            <i class="far fa-money-bill-alt fa-lg menu-icons"></i>
+                            Financial Services
+                        </a>
+                    </li>
+                    <li class="nav-item menu-names">
+                        <a class="nav-link" href="../veterinary/veterinary.html">
+                            <i class="fas fa-clinic-medical fa-lg menu-icons"></i>
+                            Veterinary Services
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown menu-names">
+                        <a class="nav-link dropdown-toggle" href="../encyclopedia/diseases.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-book fa-lg menu-icons "></i>
+                            Encyclopedia
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="../encyclopedia/diseases.html">Animal Diseases</a></li>
+                          <li><a class="dropdown-item" href="../encyclopedia/outbreaks.html">Recent Outbreaks</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item menu-names">
+                        <a class="nav-link" aria-current="page" href="">
+                            <i class="fas fa-person-booth fa-lg menu-icons"></i>
+                            Farmer's Market
+                        </a>
+                    </li>
+                    <li class="nav-item menu-names">
+                        <a class="nav-link active" aria-current="page" href="">
+                            <i class="fas fa-seedling fa-lg menu-icons active"></i>
+                            Make Your Own Feed
+                        </a>
+                    </li>
+                  </ul>
+                
+            </div>
+
+        </div>
+
+        <div class="animal-selector">
+            <h1> Select Animal </h1>
+    
+            <div class="animal-options">
+                <a href="AgroAllies/Make your own feed/feed.html=Cattle" class="animal-option">
+                    <img src="AgroAllies/assets/images/cattle.jpeg" alt="Cattle" width="100" height="100" class="animal">
+                    <p>Cattle</p>
+                </a>
+            
+                <a href="AgroAllies/Make your own feed/feed.html=Goat" class="animal-option">
+                    <img src="AgroAllies/assets/images/goat.jpeg" alt="Goat" width="100" height="100" class="animal">
+                    <p>Goat</p>
+                </a>
+    
+                <a href="AgroAllies/Make your own feed/feed.html=Chicken" class="animal-option">
+                     <img src="AgroAllies/assets/images/chickens.jpg" alt="Chicken" width="100" height="100" class="animal">
+                     <p>Chicken</p>
+                </a>
+           
+                <a href="AgroAllies/Make your own feed/feed.html=Pig" class="animal-option">
+                       <img src="AgroAllies/assets/images/Pigs.jpg" alt="Pig" width="100" height="100" class="animal">
+                        <p>Pig</p>
+                </a>       
+            
+                <a href="AgroAllies/Make your own feed/feed.html=Fish" class="animal-option">
+                    <img src="AgroAllies/assets/images/Fish.jpg" alt="Fish" width="100" height="100" class="animal">
+                      <p>Fish </p>
+                </a>        
+           
+            <!-- Add more animals as needed -->
+    
+        </div>
+    
+        <script src="AgroAllies/js/mkyfd-script.js"></script>
+    </body>
+    </html>
