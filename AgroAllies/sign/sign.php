@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>signup</title>
+  <link rel="stylesheet" href="../css/sign.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="container2">
+    <div class="image-container">
+      <img src="../assets/images/vector2.png" alt="Welcome Image">
+      <div class="text-overlay">Providing Animal Health Solution</div>
+    </div>
+  </div>
+  
+  <div class="container">
+  <?php
+   require_once "database.php"; // Assuming database.php includes your database connection
+
+   // Function to create the "users" table if it doesn't exist
+   function createTableIfNotExists($conn) {
+       $sql = "CREATE TABLE IF NOT EXISTS users (
+           id INT AUTO_INCREMENT PRIMARY KEY,
+           first_name VARCHAR(255) NOT NULL,
+           last_name VARCHAR(255) NOT NULL,
+           email VARCHAR(255) NOT NULL UNIQUE,
+           password VARCHAR(255) NOT NULL
+       )";
+
+       }
+
+   createTableIfNotExists($conn); // Call the fu
+        if (isset($_POST["submit"])) {
+            $first_name = $_POST["first_name"];
+            $last_name = $_POST["last_name"];
+            $email = $_POST["email"];
+            $password = $_POST["password"];
+            
+           
+           $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+
+           $errors = array();
+           
+           if (empty($first_name) OR empty($last_name) OR empty($email) OR empty($password)) {
+            array_push($errors,"All fields are required");
+           }
+           if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            array_push($errors, "Email is not valid");
+           }
+           if (strlen($password)<5) {
+            array_push($errors,"Password must be at least 5 charactes long");
+           }
+           
+           
+           $sql = "SELECT * FROM users WHERE email = '$email'";
+           $result = mysqli_query($conn, $sql);
+           $rowCount = mysqli_num_rows($result);
+           if ($rowCount>0) {
+            array_push($errors,"Email already exists!");
+           }
+           if (count($errors)>0) {
+            foreach ($errors as  $error) {
+                echo "<div class='alert alert-danger'>$error</div>";
+            }
+           }else{
+            
+           
+            $sql = "INSERT INTO users (first_name, last_name, email, password) VALUES ( ?, ?, ?, ? )";
+            $stmt = mysqli_stmt_init($conn);
+            $prepareStmt = mysqli_stmt_prepare($stmt,$sql);
+            if ($prepareStmt) {
+                
+                mysqli_stmt_bind_param($stmt,"ssss",$first_name, $last_name, $email, $passwordHash);
+                mysqli_stmt_execute($stmt);
+                echo "<div class='alert alert-success'>You are registered successfully.</div>";
+            }else{
+                die("Something went wrong");
+            }
+           }
+          
+
+        }
+        ?>
+         <div class="title">Create Account</div>
+        <form action="registration.php" method="post">
+       
+        <div class="user-details">
+        <div class="input-box">
+          <span class="details">First name</span>
+          <input type="text" name="first_name">
+        </div>
+        <div class="input-box">
+          <span class="details">Last name</span>
+          <input type="text" name="last_name">
+        </div>
+      </div>
+      <div class="user-details2">
+        <div class="input-box">
+          <span class="details">Email</span>
+          <input type="text" name="email">
+        </div>
+        <div class="input-box">
+          <span class="details">Passsword</span>
+          <input type="text"  name="password">
+        </div>
+      </div>
+           
+        <div class="button">
+        <input type="submit" name="submit" value="Create Account" >
+      </div>
+      <div class="register-link">
+      <p>Already have an account?<a href="../sign/login.html">Login</a></p>
+      </div>
+
+      <div class="line"></div>
+
+      
+      <button class="google-signup-btn">
+      <img src="../assets/images/google.png" alt="Google Logo" class="google-logo">
+        Sign up with Google
+      </button>
+            
+        
+      </div>
+    </div>
+</body>
+</html>
