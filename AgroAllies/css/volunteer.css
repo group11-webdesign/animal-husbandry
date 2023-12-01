@@ -62,6 +62,11 @@ a.nav-link {
     margin-right: 30px;
 }
 
+.farm-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 .nav-underline .nav-link.active {
     border-bottom: 2px solid #22651D ; */
 }
@@ -184,6 +189,9 @@ ul {
 .farm__block__content {
     display: flex;
     flex-flow: column;
+    justify-content: flex-start;
+    text-align: start;
+    align-items: flex-start;
     gap: 16px;
 }
 

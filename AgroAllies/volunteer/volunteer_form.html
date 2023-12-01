@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/volunteer.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/73320f1c27.js" crossorigin="anonymous"></script>
+    <script src="../js/script.js" defer></script>
+
+    <style>
+      body, input, select {
+          font-family: 'Inter', sans-serif;
+          font-size: 20px;
+      }
+
+      body, .btn-primary {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+      }
+
+      h2 {
+          font-family: 'Montserrat', sans-serif;
+      }
+
+      .volunteer-form {
+          margin-top: 30px;
+          padding: 20px;
+          border: 1px solid #ddd;
+          border-radius: 10px;
+      }
+
+      .subbtn {
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        text-align: center;
+      }
+
+      .form-label {
+          font-weight: 700;
+      }
+
+      .form-control {
+          margin-bottom: 10px;
+      }
+
+      .btn-primary {
+        font-family: 'Inter', serif;
+        font-size: 1.3rem;
+        color: white;
+        font-weight: bold;
+        border: none;
+        background-color: #22651D;
+        border-radius: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 0.7rem;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+      }
+
+      .arow {
+        margin-bottom: 10px;
+      }
+  </style>
+</head>
+<body>
+
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up fa-lg"></i>
+      </button>
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="../assets/AgroAllies-Black.svg" alt="AgroAllies Logo">
+        </a>
+        <div class=" justify-content-end" id="navbarNav">
+            <ul class="navbar-nav nav-underline">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#section3">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../volunteer/volunteer.html">Volunteer</a>
+                </li>
+                <li class="nav-item">
+                  <button id="signInBtn" class="btn sign-in-btn">Sign In</button>
+              </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="volunteer-form">
+        <form class="row g-3">
+            <div class=" arow col-md-6">
+              <label for="inputEmail4" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="arow col-md-6">
+              <label for="inputName4" class="form-label">Full Name:</label>
+              <input type="text" class="form-control" id="inputName4">
+            </div>
+            <div class="arow col-12">
+              <label for="inputNumber" class="form-label">Contact Number:</label>
+              <input type="text" class="form-control" id="inputNumber" placeholder="+234xxxxxxxxxx">
+            </div>
+            <div class="arow col-md-4">
+              <label for="inputPeriod" class="form-label">How long do you plan to volunteer?</label>
+              <select id="inputPeriod" class="form-select">
+                <option selected>Choose...</option>
+                <option>Long Term</option>
+                <option>Short Term</option>
+              </select>
+            </div>
+            <div class=" subbtn col-12">
+              <button type="submit" class="btn btn-primary">Submit Application</button>
+            </div>
+          </form>
+    </div>
+    
+    </div>
+
+    <script>
+      var signInBtn = document.getElementById('signInBtn');
+
+      // Attach a click event listener to the button
+      signInBtn.addEventListener('click', function() {
+          // Redirect the user to the log.php page
+          window.location.href = '../sign/log.php';
+      });
+  </script>
+  
+</body>
+</html>
