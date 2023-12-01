@@ -87,18 +87,18 @@
                         </a>
                     </li>
                     <li class="nav-item menu-names">
-                        <a class="nav-link" href="../veterinary/veterinary.html">
+                        <a class="nav-link" href="../veterinary/index.php">
                             <i class="fas fa-clinic-medical fa-lg menu-icons"></i>
                             Veterinary Services
                         </a>
                     </li>
                     <li class="nav-item dropdown menu-names">
-                        <a class="nav-link dropdown-toggle active" href="../encyclopedia/diseases.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle active" href="../encyclopedia/index.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fas fa-book fa-lg menu-icons active"></i>
                             Encyclopedia
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="../encyclopedia/diseases.html">Animal Diseases</a></li>
+                          <li><a class="dropdown-item" href="../encyclopedia/index.php">Animal Diseases</a></li>
                           <li><a class="dropdown-item" href="../encyclopedia/outbreaks.html">Recent Outbreaks</a></li>
                         </ul>
                       </li>

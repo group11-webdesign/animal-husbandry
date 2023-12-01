@@ -39,8 +39,7 @@
                             <a class="nav-link" href="../AgroAllies/volunteer/volunteer.html">Volunteer</a>
                         </li>
                         <li class="nav-item">
-                            
-                            <button class="btn sign-in-btn">Sign In</button>
+                            <button id="signInBtn" class="btn sign-in-btn">Sign In</button>
                         </li>
                     </ul>
                 </div>
@@ -49,7 +48,7 @@
                 <div class="section1-text">
                     Unlock Superior <br> Care Today
                 </div>
-                <button class="btn btn-get-started-section1">Get Started</button>
+                <button id="getStartedBtn" class="btn btn-get-started-section1">Get Started</button>
             </div>
         </section>
 
@@ -148,6 +147,25 @@
         </section>
     </div>
     
-    
+    <script>
+            // Get the button element by its ID
+            var getStartedBtn = document.getElementById('getStartedBtn');
+
+            // Attach a click event listener to the button
+            getStartedBtn.addEventListener('click', function() {
+                // Redirect the user to the sign.php page
+                window.location.href = '../AgroAllies/sign/sign.php';
+            });
+
+            var signInBtn = document.getElementById('signInBtn');
+
+            // Attach a click event listener to the button
+            signInBtn.addEventListener('click', function() {
+                // Redirect the user to the log.php page
+                window.location.href = '../AgroAllies/sign/log.php';
+            });
+    </script>
+
+    </script>
 </body>
 </html>
