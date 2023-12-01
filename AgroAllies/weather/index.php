@@ -198,8 +198,10 @@ $currentTime = time();
 
                     if ($data->main->temp_max > 30 && $data->wind->speed < 20) {
                         echo "It is a Hot Day, keep your animals cool under a shade.";
-                    } elseif ($data->main->temp_max < 20 && $data->wind->speed > 30) {
+                    } elseif ($data->main->temp_max < 20 || $data->wind->speed > 30) {
                         echo "A cool day with strong wind. Do not let your animals roam about too late.";
+                    }  elseif ($data->main->temp_max > 20 && $data->main->temp_max < 30) {
+                        echo "Perfect Temperature. Have some fun with your animals!";
                     }
                     ?>
                 </div>
