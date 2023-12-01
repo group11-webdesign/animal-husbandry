@@ -1,0 +1,100 @@
+
+
+.animal-selector h1 {
+    font-family: Montserrat, serif;
+    color: #22651D;
+    margin-top: 20px;
+}
+
+.animal-selector {
+    text-align: center;
+    background-color: #e3e9e3;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 50;
+}
+
+.animal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animal-image {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border-radius: 50%;
+    margin-right: 10px; /* Add margin to separate image from text */
+}
+
+.animal-options {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.animal-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    cursor: pointer;
+    text-decoration: none; 
+    color: #000;
+}
+
+.animal-option:hover {
+    color: #FFFFFF; 
+    background-color: #22651D;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    padding:35px;
+}
+
+.animal {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border-radius: 50%;
+    margin-bottom: 5px; /* Add margin to separate image from text */
+}
+
+#selected-animal {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Styling for the Food Information section */
+.food-info {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: none; /* Initially hide the section */
+}
+
+/* Styling for the list of foods */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Styling for each food item in the list */
+li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Change text color on hover for better user interaction */
+li:hover {
+    color: #22651D;
+}
+
+/* Styling for the Food Information paragraph */
+.food-info p {
+    margin-top: 20px;
+    font-weight: bold;
+}
