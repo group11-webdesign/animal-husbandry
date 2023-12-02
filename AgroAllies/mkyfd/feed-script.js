@@ -57,19 +57,27 @@ function populateFoodList(foodList) {
     });
 }
 
-function showFoodInformation(food) {
-    console.log(`Showing information for: ${food}`);
+function fetchFoodDetails(food) {
+    // Fetch details from the JSON file
+    fetch('https://raw.githubusercontent.com/hemmarhnuel/animal-feed-json/main/feed_details.json')
+        .then(response => response.json())
+        .then(data => {
+            const foodInfoSection = document.getElementById('food-info');
+            const foodDetailsElement = document.getElementById('food-details');
 
-    const foodInfoSection = document.getElementById('food-info');
-    const foodDetailsElement = document.getElementById('food-details');
+            // Check if the selected food exists in the data
+            if (data[food]) {
+                // Update the content with information about the selected food
+                foodDetailsElement.innerHTML = `<h2>${food}</h2><p>${data[food].information}</p>`;
+            } else {
+                console.error(`Details for ${food} not found.`);
+            }
 
-    // Update the content with information about the selected food
-    foodDetailsElement.innerHTML = `<h2>${food}</h2><p>Information for ${food}:</p>
-    <p>This is a placeholder for detailed information about ${food}.</p>`;
-
-    // Display the Food Information section
-foodInfoSection.style.display = 'block';
-}
+             // Display the Food Information section
+             foodInfoSection.style.display = 'block';
+            })
+            .catch(error => console.error('Error fetching food details:', error));
+    }
 
 // Function to get the image source for a given animal
 function getAnimalImageSource(animal) {
