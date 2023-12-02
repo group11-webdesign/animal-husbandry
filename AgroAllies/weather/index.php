@@ -86,9 +86,7 @@ $currentTime = time();
                 <div class="logo">
                     <img src="../assets/AgroAllies.svg" alt="AgroAllies Logo">
                 </div>
-                <a class="btn hidemenu-btn" href="#" role="button">
-                    <img class="hidemenu-icon" src="../assets/buttons/hidemenu button.svg" alt="Hidemenu Button">
-                </a>
+                
             </div>
 
             <div class="menu-items">
@@ -128,13 +126,13 @@ $currentTime = time();
                         </ul>
                       </li>
                       <li class="nav-item menu-names">
-                        <a class="nav-link" aria-current="page" href="">
+                        <a class="nav-link" aria-current="page" href="../market/index.html">
                             <i class="fas fa-person-booth fa-lg menu-icons"></i>
                             Farmer's Market
                         </a>
                     </li>
                     <li class="nav-item menu-names">
-                        <a class="nav-link" aria-current="page" href="">
+                        <a class="nav-link" aria-current="page" href="../mkyfd/myof.html">
                             <i class="fas fa-seedling fa-lg menu-icons"></i>
                             Make Your Own Feed
                         </a>
@@ -181,27 +179,27 @@ $currentTime = time();
                     $highWindSpeedThreshold = 40;
 
                     if ($data->main->temp_max >= min($cattleTempRange) && $data->main->temp_max <= max($cattleTempRange)) {
-                        echo "Cattle prefer temperatures between 4°C to 27°C. Ensure they have shade.";
+                        echo "Cattle prefer temperatures between 4°C to 27°C. Ensure they have shade.". "<br>";
                     } elseif ($data->main->temp_max >= min($poultryTempRange) && $data->main->temp_max <= max($poultryTempRange)) {
-                        echo "Optimal temperature for poultry is around 18°C to 24°C. It's a good day for them to graze.";
+                        echo "Optimal temperature for poultry is around 18°C to 24°C. It's a good day for them to graze.". "<br>";
                     } elseif ($data->main->temp_max >= min($swineTempRange) && $data->main->temp_max <= max($swineTempRange)) {
-                        echo "Swine prefer temperatures between 15°C to 21°C";
+                        echo "Swine prefer temperatures between 15°C to 21°C". "<br>";
                     }
 
                     if ($data->main->humidity > $highHumidityThreshold) {
-                        echo "High humidity levels. Ensure proper ventilation to avoid heat stress.";
+                        echo "High humidity levels. Ensure proper ventilation to avoid heat stress.". "<br>";
                     }
 
                     if ($data->wind->speed > $highWindSpeedThreshold) {
-                        echo "High wind speed. Provide shelters or windbreaks for animals.";
+                        echo "High wind speed. Provide shelters or windbreaks for animals.". "<br>";
                     }
 
                     if ($data->main->temp_max > 30 && $data->wind->speed < 20) {
-                        echo "It is a Hot Day, keep your animals cool under a shade.";
+                        echo "It is a Hot Day, keep your animals cool under a shade.". "<br>";
                     } elseif ($data->main->temp_max < 20 || $data->wind->speed > 30) {
-                        echo "A cool day with strong wind. Do not let your animals roam about too late.";
+                        echo "A cool day with strong wind. Do not let your animals roam about too late.". "<br>";
                     }  elseif ($data->main->temp_max > 20 && $data->main->temp_max < 30) {
-                        echo "Perfect Temperature. Have some fun with your animals!";
+                        echo "Perfect Temperature. Have some fun with your animals!". "<br>";
                     }
                     ?>
                 </div>

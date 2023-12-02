@@ -27,9 +27,7 @@
                 <div class="logo">
                     <img src="../assets/AgroAllies.svg" alt="AgroAllies Logo">
                 </div>
-                <a class="btn hidemenu-btn" href="#" role="button">
-                    <img class="hidemenu-icon" src="../assets/buttons/hidemenu button.svg" alt="Hidemenu Button">
-                </a>
+                
             </div>
 
             <div class="menu-items">
@@ -69,13 +67,13 @@
                         </ul>
                       </li>
                       <li class="nav-item menu-names">
-                        <a class="nav-link" aria-current="page" href="">
+                        <a class="nav-link" aria-current="page" href="../market/index.html">
                             <i class="fas fa-person-booth fa-lg menu-icons"></i>
                             Farmer's Market
                         </a>
                     </li>
                     <li class="nav-item menu-names">
-                        <a class="nav-link" aria-current="page" href="">
+                        <a class="nav-link" aria-current="page" href="../mkyfd/myof.html">
                             <i class="fas fa-seedling fa-lg menu-icons"></i>
                             Make Your Own Feed
                         </a>

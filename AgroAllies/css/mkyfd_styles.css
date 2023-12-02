@@ -83,7 +83,7 @@ ul {
 }
 
 /* Styling for each food item in the list */
-li {
+.food-item {
     margin-bottom: 10px;
     cursor: pointer;
 }

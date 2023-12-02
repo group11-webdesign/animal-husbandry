@@ -47,6 +47,8 @@ function populateFoodList(foodList) {
     foodList.forEach(food => {
         const li = document.createElement('li');
         li.textContent = food;
+        // Add a class to each list item
+        li.classList.add('food-item'); // You can change 'food-item' to your desired class name
         // Attach a click event to each food item to show information when clicked
         li.onclick = function() {
             showFoodInformation(food);
