@@ -73,11 +73,11 @@ foodInfoSection.style.display = 'block';
 function getAnimalImageSource(animal) {
     // Replace with the actual paths to your animal images
     const imagePaths = {
-        'Cattle': '../AgroAllies/assets/images/cattle.jpeg',
-        'Goat': '../AgroAllies/assets/images/goat.jpeg',
-        'Chicken': '../AgroAllies/assets/images/chickens.jpg',
-        'Pig': '../AgroAllies/assets/images/Pigs.jpg',
-        'Fish': '../AgroAllies/assets/images/Fish.jpg'
+        'Cattle': '../assets/images/cattle.jpeg',
+        'Goat': '../assets/images/goat.jpeg',
+        'Chicken': '../assets/images/chickens.jpg',
+        'Pig': '../assets/images/Pigs.jpg',
+        'Fish': '../assets/images/Fish.jpg'
         // Add more animals and their respective image paths as needed
     };
 
