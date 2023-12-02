@@ -35,7 +35,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Volunteer</a>
                 </li>
                 <li class="nav-item">
-                    <button class="btn sign-in-btn">Sign In</button>
+                    <button id="signInBtn" class="btn sign-in-btn">Sign In</button>
                 </li>
             </ul>
         </div>
@@ -60,31 +60,34 @@
             <div class="farm__block">
                 <img src="../assets/images/svg/Rectangle 4.svg" alt="">
                 <div class="farm__block__content">
-                    <p>FARM ONE
-                        Location: 8c, adamu close, Enugu
-                        About farm: A brief description of the farm, its size, and what type of animals are raised.
+                    <p>
+                        <span class="farm-name">Alegbeye Farms</span> <br>
+                        
+                        Location: 8c, adamu close, Enugu<br>
+                        About farm: A brief description of the farm, its size, and what type of animals are raised.<br>
                         Volunteer task: Describe the tasks that volunteers will be expected to perform. This could include feeding animals, cleaning stalls, gardening, etc.</p>
-                    <a href="#">APPLY TO VOLUNTEER AT FARM ONE</a>
+                    <a href="../volunteer/volunteer_form.html">APPLY TO VOLUNTEER</a>
                 </div>
             </div>
             <div class="farm__block">
                 <img src="../assets/images/svg/Rectangle 5.svg" alt="">
                 <div class="farm__block__content">
-                    <p>FARM TWO
-                        Location: 8c, adamu close, Enugu
-                        About farm: A brief description of the farm, its size, and what type of animals are raised.
+                    <p>
+                        <span class="farm-name">Tinubu and Co Farms</span><br> 
+                        Location: Adigun Close, Ilishan-Remo, Ogun<br>
+                        About farm: A brief description of the farm, its size, and what type of animals are raised.<br>
                         Volunteer task: Describe the tasks that volunteers will be expected to perform. This could include feeding animals, cleaning stalls, gardening, etc.</p>
-                    <a href="#">APPLY TO VOLUNTEER AT FARM ONE</a>
+                    <a href="../volunteer/volunteer_form.html">APPLY TO VOLUNTEER</a>
                 </div>
             </div>
             <div class="farm__block">
                 <img src="../assets/images/svg/Rectangle 6.svg" alt="">
                 <div class="farm__block__content">
-                    <p>FARM THREE
-                        Location: 8c, adamu close, Enugu
-                        About farm: A brief description of the farm, its size, and what type of animals are raised.
+                    <p> <span class="farm-name">Sapa Farms</span> <br>
+                        Location: Opposite the Ilu River, Igboho, Oyo<br>
+                        About farm: A brief description of the farm, its size, and what type of animals are raised.<br>
                         Volunteer task: Describe the tasks that volunteers will be expected to perform. This could include feeding animals, cleaning stalls, gardening, etc.</p>
-                    <a href="#">APPLY TO VOLUNTEER AT FARM ONE</a>
+                    <a href="../volunteer/volunteer_form.html">APPLY TO VOLUNTEER</a>
                 </div>
             </div>
             
@@ -105,5 +108,15 @@
             <img src="../assets/images/svg/Rectangle 10.svg" alt="">
         </div>
     </div>
+
+    <script>
+        var signInBtn = document.getElementById('signInBtn');
+
+        // Attach a click event listener to the button
+        signInBtn.addEventListener('click', function() {
+            // Redirect the user to the log.php page
+            window.location.href = '../sign/log.php';
+        });
+    </script>
 </body>
 </html>

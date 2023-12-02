@@ -35,13 +35,13 @@
             <div class="menu-items">
                 <ul class="nav-pills custom-pills nav-fill justify-content-end">
                     <li class="nav-item menu-names">
-                        <a class="nav-link" aria-current="page" href="">
+                        <a class="nav-link" aria-current="page" href="../general/general.html">
                             <i class="fas fa-info-circle fa-lg menu-icons"></i>
                             General Info
                         </a>
                     </li>
                     <li class="nav-item menu-names">
-                        <a class="nav-link" aria-current="page" href="../weather/weather.html">
+                        <a class="nav-link" aria-current="page" href="../weather/index.php">
                             <i class="fas fa-cloud fa-lg menu-icons"></i>
                             Weather
                         </a>

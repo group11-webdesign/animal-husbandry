@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION["user"])) {
-   header("Location: ../general/general.html");
+   header("Location:/AgroAllies/general/general.html");
 }
 ?>
 <!DOCTYPE html>
@@ -33,7 +33,7 @@ if (isset($_SESSION["user"])) {
                 if (password_verify($password, $user["password"])) {
                     session_start();
                     $_SESSION["user"] = "yes";
-                    header("Location: index.php");
+                    header("Location: /AgroAllies/general/general.htmll");
                     die();
                 }else{
                     echo "<div class='alert alert-danger'>Password does not match</div>";
@@ -43,8 +43,8 @@ if (isset($_SESSION["user"])) {
             }
         }
         ?>
-        <form action="g.php" method="post">
-    <div class="title">Create Account</div>
+        <form action="/AgroAllies/general/general.html" method="post">
+    <div class="title">Welcome Back</div>
     
       
       <div class="user-details2">

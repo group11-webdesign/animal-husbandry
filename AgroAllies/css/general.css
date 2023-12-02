@@ -157,7 +157,7 @@ a.nav-link {
     padding: 20px;
 }
 
-.learn-more-button {
+.learn-more-button, button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #90EE90;
@@ -172,3 +172,28 @@ a.nav-link {
     margin-top: 10px;
 }
 
+p {
+    font-family: 'Inter', serif;
+}
+
+/* Popup styles */
+#popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #popup-content {
+    background: #fff;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  
