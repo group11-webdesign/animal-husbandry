@@ -125,7 +125,7 @@ $(document).ready(function () {
   $('#stars-existing').on('starrr:change', function (e, value) {
     $('#count-existing').html(value);
     var id = $(this).parent().find('input.post_id').val();
-    $.get('http://localhost/AgroCraft/Review/rating.php?add_stars=' + value + "&post_id=" + id, function (data) {
+    $.get('http://localhost/AgroAllies/Review/rating.php?add_stars=' + value + "&post_id=" + id, function (data) {
       if (data) {
         alert(value);
       } else {

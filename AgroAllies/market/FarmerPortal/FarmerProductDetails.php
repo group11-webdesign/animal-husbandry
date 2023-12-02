@@ -9,7 +9,7 @@ include("../Functions/functions.php");
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <title>AgroCraft</title>
+     <title>AgroAllies</title>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <script src="https://kit.fontawesome.com/c587fc1763.js" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -953,12 +953,12 @@ include("../Functions/functions.php");
 
                </div>
                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center">
-                         <p><u><a href="https://www.agrocraft.com/">AgroCraft Corporation</a></u> is a Multitrading Company for farmers ang traders</p>
-                         <p class="h6">Copy All right Reversed.<a class="text-green ml-2" href="https://www.google.com" target="_blank">Agrotech</a></p>
-                    </div>
-                    </hr>
-               </div>
+                          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center">
+                               <p><u><a href="../../index.html">AgroAllies Corporation</a></u> is a company built for Animal Husbandry farmers and their customers</p>
+                               <p class="h6"> All rights Reversed.<a class="text-green ml-2" href="https://www.google.com" target="_blank">Agrotech</a></p>
+                          </div>
+                          </hr>
+                     </div>
           </div>
      </section>
 

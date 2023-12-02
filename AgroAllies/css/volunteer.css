@@ -65,13 +65,14 @@ a.nav-link {
 .farm-name {
     font-size: 1.5rem;
     font-weight: bold;
+    color: #22651D;
 }
 
 .nav-underline .nav-link.active {
     border-bottom: 2px solid #22651D ; */
 }
 
-.sign-in-btn {
+.sign-in-btn,.back-btn {
     font-family: 'Inter', serif;
     font-size: 1rem;
     color: white;
@@ -193,6 +194,12 @@ ul {
     text-align: start;
     align-items: flex-start;
     gap: 16px;
+    font-family: 'Montserrat';
+}
+
+p, b, span {
+    font-family: 'Montserrat';
+    margin-bottom: 4px;
 }
 
 .farm__block__content a {

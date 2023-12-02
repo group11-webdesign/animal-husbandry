@@ -79,7 +79,7 @@ if (isset($_POST["submit"])) {
 <html lang="en">
 
 <head>
-    <title>Signup</title>
+    <title>Sign Up page</title>
     <link rel="stylesheet" href="../css/sign.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>

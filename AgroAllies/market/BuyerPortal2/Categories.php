@@ -820,12 +820,12 @@ include("../Functions/functions.php");
                     </hr>
                </div>
                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center">
-                         <p><u><a href="https://www.agrocraft.com/">AgroCraft Corporation</a></u> is a Multitrading Company for farmers ang traders</p>
-                         <p class="h6">Copy All right Reversed.<a class="text-green ml-2" href="https://www.google.com" target="_blank">Agrotech</a></p>
-                    </div>
-                    </hr>
-               </div>
+                          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center">
+                               <p><u><a href="../../index.html">AgroAllies Corporation</a></u> is a company built for Animal Husbandry farmers and their customers</p>
+                               <p class="h6"> All rights Reversed.<a class="text-green ml-2" href="https://www.google.com" target="_blank">Agrotech</a></p>
+                          </div>
+                          </hr>
+                     </div>
           </div>
      </section>
      <!-- ./Footer a ,myfooter,aligncenter-->
