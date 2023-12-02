@@ -254,7 +254,7 @@
   </div>
   <div class="footer">
 
-    <label class="payment">Payment Options:-</label>
+    <label class="payment">Payment Optionss:-</label>
     <div class="cash"><img src="../Images/Website/cash.jpg" height="75px" width="125px"></div>
     <div class="patym"><img src="../Images/Website/petm.jpg" height="75px" width="125px"></div>
   </div>

@@ -9,7 +9,22 @@
  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 
-
+	<style>
+		.back-btn {
+			font-family: 'Inter', serif;
+			font-size: 1rem;
+			color: #22651D;
+			font-weight: bold;
+			border: none;
+			background-color: white;
+			border-radius: 15px;
+			margin-top: 100px;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 0.4rem;
+			padding-bottom: 0.4rem;
+}
+	</style>
 </head>
 
 <body >
@@ -17,5 +32,15 @@
 	<label id="Farmerbutton"><a id = "link" href="auth/FarmerLogin.php">FARMER</a></label>
 	<label id="Buyerbutton"><a id = "link" href="auth/BuyerLogin.php">BUYER</a></label>
 	
+	<div class="subbtn col-12">
+		<!-- New Back button -->
+		<button type="button" class="btn back-btn btn-secondary" onclick="goBack()">Back</button>
+	  </div>
+
+	<script>
+		function goBack() {
+            window.history.back();
+      }
+	</script>
 </body>
 </html>

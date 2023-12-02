@@ -547,8 +547,8 @@
         <div class="container">
             <div class="row text-center text-xs-center text-sm-left text-md-left">
                 <div class="col aligncenter">
-                    <p>Payment Option</p>
-                    <img src="../Images/Website/paytm1.jpg" alt="paytm">
+                    <p>Payment Options</p>
+                    <img src="../Images/Website/paytm1.jpg" alt="paytm" style="height:37px">
                     <img src="../Images/Website/cod.jpg" alt="paytm" style="height:37px">
                 </div>
             </div>

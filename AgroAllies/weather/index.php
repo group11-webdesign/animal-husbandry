@@ -146,7 +146,7 @@ $currentTime = time();
                         </a>
                     </li>
                     <li class="nav-item menu-names">
-                        <a class="nav-link" aria-current="page" href="#">
+                        <a class="nav-link" aria-current="page" href="../sign/log.php">
                             <i class="fas fa-sign-out-alt fa-lg menu-icons"></i>
                             Logout
                         </a>
@@ -192,7 +192,7 @@ $currentTime = time();
                     // Wind speed ranges
                     $highWindSpeedThreshold = 40;
 
-                    if ($data->main->temp_max >= min($cattleTempRange) && $data->main->temp_max <= max($cattleTempRange)) {
+                    if ( $data->main->temp_max >= max($cattleTempRange)) {
                         echo "Cattle prefer temperatures between 4°C to 27°C. Ensure they have shade.". "<br>";
                     } elseif ($data->main->temp_max >= min($poultryTempRange) && $data->main->temp_max <= max($poultryTempRange)) {
                         echo "Optimal temperature for poultry is around 18°C to 24°C. It's a good day for them to graze.". "<br>";
@@ -208,11 +208,11 @@ $currentTime = time();
                         echo "High wind speed. Provide shelters or windbreaks for animals.". "<br>";
                     }
 
-                    if ($data->main->temp_max > 30 && $data->wind->speed < 20) {
+                    if ($data->main->temp_max > 27 && $data->wind->speed < 20) {
                         echo "It is a Hot Day, keep your animals cool under a shade.". "<br>";
                     } elseif ($data->main->temp_max < 20 || $data->wind->speed > 30) {
                         echo "A cool day with strong wind. Do not let your animals roam about too late.". "<br>";
-                    }  elseif ($data->main->temp_max > 20 && $data->main->temp_max < 30) {
+                    }  elseif ($data->main->temp_max > 20 && $data->main->temp_max < 27) {
                         echo "Perfect Temperature. Have some fun with your animals!". "<br>";
                     }
                     ?>

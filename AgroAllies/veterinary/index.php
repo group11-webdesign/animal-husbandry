@@ -87,7 +87,7 @@
                         </a>
                     </li>
                     <li class="nav-item menu-names">
-                        <a class="nav-link" aria-current="page" href="#">
+                        <a class="nav-link" aria-current="page" href="../sign/log.php">
                             <i class="fas fa-sign-out-alt fa-lg menu-icons"></i>
                             Logout
                         </a>
