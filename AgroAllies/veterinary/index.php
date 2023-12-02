@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
+    <title>Veterinary</title>
 
      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
@@ -213,19 +213,27 @@ searchSection.appendChild(resultBox);
                     <div class="vet-cards" id = "vets">
                     <?php
 
-$connection = mysqli_connect("localhost", "root", "", "agroallies");
+    // Connection parameters for a remote MySQL server
+    $server = "sql11.freemysqlhosting.net";
+    $database = "sql11666984";
+    $username = "sql11666984";
+    $password = "ZJeX9tpVXc";
+    $port = 3306;
 
-if (!$connection) {
+    // Establishing the connection
+    $con = mysqli_connect($server, $username, $password, $database, $port);
+
+if (!$con) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
 
 $query = "SELECT * FROM `vets`";
-$result = mysqli_query($connection, $query);
+$result = mysqli_query($con, $query);
 
 
 if (!$result) {
-    die("Query failed: " . mysqli_error($connection));
+    die("Query failed: " . mysqli_error($con));
     
 }
 
@@ -256,7 +264,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 
 
 
-mysqli_close($connection);
+mysqli_close($con);
 ?>
 
                        

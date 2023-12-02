@@ -886,7 +886,7 @@
 
      </div>
      <div class="instaid">
-          <div class="text"><a href="#" style="color:black;">@AgroCraft</a></div>
+          <div class="text"><a href="#" style="color:black;">@AgroAllies</a></div>
 
           <div class="gmailid">
                <a href="#" class="hypher" style="color:black;">agrocraft6@gmail.com</a>
@@ -894,7 +894,7 @@
 
      </div>
      <div class="copy">
-          <h5 style="test-align:center; padding-top:40px;margin-left:650px; background-color:'grey';">Copyright &copy; 2022 by www.AgroCraft.com</h5>
+          <h5 style="test-align:center; padding-top:40px;margin-left:650px; background-color:'grey';">Copyright &copy; 2022 by www.AgroAllies.com</h5>
      </div>
 
 </body>

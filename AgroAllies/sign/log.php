@@ -8,7 +8,7 @@ if (isset($_SESSION["user"])) {
 <html>
 
 <head>
-  <title>login</title>
+  <title>Sign In Page</title>
   <link rel="stylesheet" href="../css/style_log.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -27,7 +27,7 @@ if (isset($_SESSION["user"])) {
            $password = $_POST["password"];
             require_once "database.php";
             $sql = "SELECT * FROM users WHERE email = '$email'";
-            $result = mysqli_query($conn, $sql);
+            $result = mysqli_query($con, $sql);
             $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
             if ($user) {
                 if (password_verify($password, $user["password"])) {

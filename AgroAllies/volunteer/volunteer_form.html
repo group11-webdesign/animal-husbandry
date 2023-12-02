@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Volunteer Form</title>
     <link rel="stylesheet" href="../css/volunteer.css">
      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
@@ -133,6 +133,11 @@
     
     </div>
 
+    <div class="subbtn col-12">
+      <!-- New Back button -->
+      <button type="button" class="btn back-btn btn-secondary" onclick="goBack()">Back</button>
+    </div>
+
     <script>
       var signInBtn = document.getElementById('signInBtn');
 
@@ -141,6 +146,44 @@
           // Redirect the user to the log.php page
           window.location.href = '../sign/log.php';
       });
+
+      function goBack() {
+            window.history.back();
+      }
+
+      function submitForm() {
+            // Get form data
+            var formData = {
+                email: document.getElementById('inputEmail4').value,
+                fullName: document.getElementById('inputName4').value,
+                contactNumber: document.getElementById('inputNumber').value,
+                volunteerPeriod: document.getElementById('inputPeriod').value
+            };
+
+            // Send data to server using AJAX
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'submit_form.php', true);
+            xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+
+            // Handle the response from the server
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    // Successful response from the server
+                    alert('Application submitted successfully!');
+                    // You can redirect the user to a thank-you page or perform other actions here
+                } else {
+                    // Error response from the server
+                    alert('Error submitting application. Please try again later.');
+                }
+            };
+
+            // Convert the JavaScript object to a JSON string
+            var jsonData = JSON.stringify(formData);
+
+            // Send the data to the server
+            xhr.send(jsonData);
+          }
+
   </script>
   
 </body>

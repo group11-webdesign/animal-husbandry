@@ -211,4 +211,40 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
+
+.sign-in-btn, .btn-get-started-section1 {
+    cursor: pointer;
+}
+
+
+.contact-us {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Ensure icons are above the image */
+}
+
+.contact-button {
+    display: block;
+    margin: 0 auto; /* Center the button horizontally */
+    text-align: center;
+    text-decoration: none; /* Remove underlines from the link */
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.ci {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Add additional styling as needed */

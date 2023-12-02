@@ -9,7 +9,7 @@ if (isset($_SESSION["user"])) {
 require_once "database.php"; // Assuming database.php includes your database connection
 
 // Function to create the "users" table if it doesn't exist
-function createTableIfNotExists($conn) {
+function createTableIfNotExists($con) {
     $sql = "CREATE TABLE IF NOT EXISTS users (
         id INT AUTO_INCREMENT PRIMARY KEY,
         first_name VARCHAR(255) NOT NULL,
@@ -19,10 +19,10 @@ function createTableIfNotExists($conn) {
     )";
 
     // Execute the query
-    mysqli_query($conn, $sql);
+    mysqli_query($con, $sql);
 }
 
-createTableIfNotExists($conn); // Call the function
+createTableIfNotExists($con); // Call the function
 
 if (isset($_POST["submit"])) {
     $first_name = $_POST["first_name"];
@@ -45,7 +45,7 @@ if (isset($_POST["submit"])) {
     }
 
     $sql = "SELECT * FROM users WHERE email = '$email'";
-    $result = mysqli_query($conn, $sql);
+    $result = mysqli_query($con, $sql);
     $rowCount = mysqli_num_rows($result);
 
     if ($rowCount > 0) {
@@ -58,7 +58,7 @@ if (isset($_POST["submit"])) {
         }
     } else {
         $sql = "INSERT INTO users (first_name, last_name, email, password) VALUES (?, ?, ?, ?)";
-        $stmt = mysqli_stmt_init($conn);
+        $stmt = mysqli_stmt_init($con);
         $prepareStmt = mysqli_stmt_prepare($stmt, $sql);
 
         if ($prepareStmt) {
@@ -79,7 +79,7 @@ if (isset($_POST["submit"])) {
 <html lang="en">
 
 <head>
-    <title>Signup</title>
+    <title>Sign Up page</title>
     <link rel="stylesheet" href="../css/sign.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
