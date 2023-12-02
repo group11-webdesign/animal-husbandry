@@ -27,8 +27,8 @@ $currentTime = time();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Page Title</title>
 
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="../css/layout_styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/73320f1c27.js" crossorigin="anonymous"></script>
@@ -92,6 +92,12 @@ $currentTime = time();
             <div class="menu-items">
                 <ul class="nav-pills custom-pills nav-fill justify-content-end">
                     <li class="nav-item menu-names">
+                        <a class="nav-link" aria-current="page" href="../index.html">
+                            <i class="fas fa-home fa-lg menu-icons"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item menu-names">
                         <a class="nav-link" aria-current="page" href="../general/general.html">
                             <i class="fas fa-info-circle fa-lg menu-icons"></i>
                             General Info
@@ -115,16 +121,18 @@ $currentTime = time();
                             Veterinary Services
                         </a>
                     </li>
-                    <li class="nav-item dropdown menu-names">
-                        <a class="nav-link dropdown-toggle" href="../encyclopedia/index.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <li class="nav-item menu-names">
+                        <a class="nav-link" href="../encyclopedia/index.php" >
                             <i class="fas fa-book fa-lg menu-icons"></i>
-                            Encyclopedia
+                            Animal Diseases
                         </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="../encyclopedia/index.php">Animal Diseases</a></li>
-                          <li><a class="dropdown-item" href="../encyclopedia/outbreaks.html">Recent Outbreaks</a></li>
-                        </ul>
                       </li>
+                      <li class="nav-item menu-names">
+                        <a class="nav-link" href="../encyclopedia/outbreaks.html" >
+                            <i class="fas fa-book fa-lg menu-icons"></i>
+                            Recent Outbreaks
+                        </a>
+                    </li>
                       <li class="nav-item menu-names">
                         <a class="nav-link" aria-current="page" href="../market/index.html">
                             <i class="fas fa-person-booth fa-lg menu-icons"></i>
@@ -135,6 +143,12 @@ $currentTime = time();
                         <a class="nav-link" aria-current="page" href="../mkyfd/myof.html">
                             <i class="fas fa-seedling fa-lg menu-icons"></i>
                             Make Your Own Feed
+                        </a>
+                    </li>
+                    <li class="nav-item menu-names">
+                        <a class="nav-link" aria-current="page" href="#">
+                            <i class="fas fa-sign-out-alt fa-lg menu-icons"></i>
+                            Logout
                         </a>
                     </li>
                   </ul>

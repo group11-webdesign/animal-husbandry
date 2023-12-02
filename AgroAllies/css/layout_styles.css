@@ -30,7 +30,7 @@ body, html {
     background-color: #ffffff;
     width: 22rem;
     align-items: flex-start; /* Center content horizontally */
-    padding-top: 3.125rem;
+    padding-top: 2rem;
 }
 
 
@@ -39,19 +39,9 @@ body, html {
     display: flex;
     flex-direction: row;
     margin-left: 1rem;
-    margin-bottom: 3.125rem; /* Adds spacing between logo and menu items */
+    margin-bottom: 4rem; /* Adds spacing between logo and menu items */
 }
 
-.hidemenu-btn {
-    position: relative; /* Ensures the z-index property works */
-    z-index: 1; /* Adjust the z-index value */
-}
-
-.hidemenu-icon {
-    margin-left: 1.7rem;
-    margin-top: -1rem;;
-    z-index: 1;
-}
 
 .menu-items {
     justify-content: space-evenly; 
@@ -108,3 +98,4 @@ a.nav-link {
     justify-content: center;
     border-radius: 0.8rem; /* Adjust the value as needed */
 } 
+
