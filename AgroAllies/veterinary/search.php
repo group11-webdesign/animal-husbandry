@@ -8,22 +8,22 @@
 
     // Establishing the connection
     $con = mysqli_connect($server, $username, $password, $database, $port);
-if (!$conn) {
+if (!$con) {
     die("Connection error");
 }
 
 $vetnames = [];
 
 
-$q = mysqli_real_escape_string($conn, $_REQUEST["q"]);
+$q = mysqli_real_escape_string($con, $_REQUEST["q"]);
 
 $query = "SELECT * FROM `vets`
           WHERE `vetname` LIKE '$q%'";
 
-$result = mysqli_query($conn, $query);
+$result = mysqli_query($con, $query);
 
 if (!$result) {
-    die("Query failed: " . mysqli_error($conn));
+    die("Query failed: " . mysqli_error($con));
 }
 
 while ($row = mysqli_fetch_assoc($result)) {
@@ -32,5 +32,5 @@ while ($row = mysqli_fetch_assoc($result)) {
 
 echo json_encode($vetnames);
 
-mysqli_close($conn);
+mysqli_close($con);
 ?>

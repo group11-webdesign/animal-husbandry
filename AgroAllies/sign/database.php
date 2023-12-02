@@ -9,7 +9,7 @@
 
     // Establishing the connection
     $con = mysqli_connect($server, $username, $password, $database, $port);
-    if (!$conn) {
+    if (!$con) {
         die("Something went wrong;");
     }
 

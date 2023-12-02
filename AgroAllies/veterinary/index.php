@@ -213,19 +213,19 @@ searchSection.appendChild(resultBox);
                     <div class="vet-cards" id = "vets">
                     <?php
 
-$connection = mysqli_connect("localhost", "root", "", "agroallies");
+$conection = mysqli_connect("localhost", "root", "", "agroallies");
 
-if (!$connection) {
+if (!$conection) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
 
 $query = "SELECT * FROM `vets`";
-$result = mysqli_query($connection, $query);
+$result = mysqli_query($conection, $query);
 
 
 if (!$result) {
-    die("Query failed: " . mysqli_error($connection));
+    die("Query failed: " . mysqli_error($conection));
     
 }
 
@@ -256,7 +256,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 
 
 
-mysqli_close($connection);
+mysqli_close($conection);
 ?>
 
                        
