@@ -52,6 +52,7 @@ $currentTime = time();
             border-radius: 2px;
             width: 700px;
             margin: 0 auto;
+            margin-top: 30px;
         }
         
         .weather-icon {
@@ -128,7 +129,7 @@ $currentTime = time();
                         </a>
                       </li>
                       <li class="nav-item menu-names">
-                        <a class="nav-link" href="../encyclopedia/outbreaks.html" >
+                        <a class="nav-link" href="../encyclopedia/outbreaks.php" >
                             <i class="fas fa-book fa-lg menu-icons"></i>
                             Recent Outbreaks
                         </a>

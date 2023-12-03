@@ -69,7 +69,7 @@
                         </a>
                       </li>
                       <li class="nav-item menu-names">
-                        <a class="nav-link" href="../encyclopedia/outbreaks.html" >
+                        <a class="nav-link" href="../encyclopedia/outbreaks.php" >
                             <i class="fas fa-book fa-lg menu-icons"></i>
                             Recent Outbreaks
                         </a>
@@ -244,7 +244,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     <div class=\"card mb-3 vet-card-card\" style=\"max-width: 400px;\">
         <div class=\"row g-0\">
             <div class=\"col-md-12\">
-                <img src=\"../assets/images/vet1.jpg\" class=\"img-fluid rounded-top\" alt=\"...\">
+                <img src=\"../assets/images/{$row["vetimage"]}\" class=\"img-fluid rounded-top vet-image\" alt=\"...\">
             </div>
             <div class=\"col-md-12\">
                 <div class=\"card-body\">

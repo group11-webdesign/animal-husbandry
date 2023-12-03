@@ -13,6 +13,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/73320f1c27.js" crossorigin="anonymous"></script>
 
+    <!-- Add these links in the head section of your HTML -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.6/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.6/js/jquery.dataTables.js"></script>
 
 </head>
 
@@ -67,7 +71,7 @@
                         </a>
                       </li>
                       <li class="nav-item menu-names">
-                        <a class="nav-link active" href="../encyclopedia/outbreaks.html" >
+                        <a class="nav-link active" href="../encyclopedia/outbreaks.php" >
                             <i class="fas fa-book fa-lg menu-icons active"></i>
                             Recent Outbreaks
                         </a>
@@ -107,24 +111,73 @@
                       <a class="nav-link"  href="../encyclopedia/index.php">Animal Diseases</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="../encyclopedia/outbreaks.html">Recent Outbreaks</a>
+                      <a class="nav-link active" aria-current="page" href="../encyclopedia/outbreaks.php">Recent Outbreaks</a>
                     </li>
                 </ul>
 
 
             </div>
+            <?php
+
+                // Connection parameters for a remote MySQL server
+                $server = "sql11.freemysqlhosting.net";
+                $database = "sql11666984";
+                $username = "sql11666984";
+                $password = "ZJeX9tpVXc";
+                $port = 3306;
+
+                // Establishing the connection
+                $con = mysqli_connect($server, $username, $password, $database, $port);
+
+                if (!$con) {
+                die("Connection failed: " . mysqli_connect_error());
+                }
+
+
+                $query = "SELECT * FROM `disease` WHERE `cases` > 10 ORDER BY `cases` DESC";
+                $result = mysqli_query($con, $query);
+
+
+                if (!$result) {
+                die("Query failed: " . mysqli_error($con));
+
+                }
+
+                echo '<table id="outbreaksTable" class="display out-table">
+                        <thead>
+                            <tr>
+                                <th>Disease Name</th>
+                                <th>Number of Cases</th>
+                            </tr>
+                        </thead>
+                        <tbody>';
+
+                while ($row = mysqli_fetch_assoc($result)) {
+                    echo "<tr>
+                            <td>$row[name]</td>
+                            <td>$row[cases]</td>
+                        </tr>";
+                }
+
+                echo '</tbody></table>';
+
+                mysqli_close($con);
+                ?>
 
         </div>
 
       </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+      <!-- Add this script after including DataTables and at the end of your body section -->
+
+    <!-- Add this script after including DataTables and at the end of your body section -->
+    <script>
+        $(document).ready(function () {
+            $('#outbreaksTable').DataTable();
+        });
+    </script>
+
 </body>
 
 </html>
-
-
-<div class="content">
-    <div class="main">
-
-    
-</div>

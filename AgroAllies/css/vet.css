@@ -60,3 +60,9 @@ a.btstyle {
 .vet-imgs {
     content: url("../assets/images/vet1.jpg");
 }
+
+.vet-card-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
