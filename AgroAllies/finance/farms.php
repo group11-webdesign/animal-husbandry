@@ -1,12 +1,14 @@
 <!-- farms_list.php -->
 <?php
 // Database connection details
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "login";
+$server = "sql11.freemysqlhosting.net";
+$database = "sql11666984";
+$username = "sql11666984";
+$password = "ZJeX9tpVXc";
+
 
 // Create a connection
+
 $con = new mysqli($servername, $username, $password, $dbname);
 
 // Check the connection
