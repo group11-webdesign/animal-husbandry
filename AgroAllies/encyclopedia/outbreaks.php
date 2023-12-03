@@ -113,11 +113,49 @@
 
 
             </div>
+            <?php
+
+// Connection parameters for a remote MySQL server
+$server = "sql11.freemysqlhosting.net";
+$database = "sql11666984";
+$username = "sql11666984";
+$password = "ZJeX9tpVXc";
+$port = 3306;
+
+// Establishing the connection
+$con = mysqli_connect($server, $username, $password, $database, $port);
+
+if (!$con) {
+die("Connection failed: " . mysqli_connect_error());
+}
+
+
+$query = "SELECT * FROM `disease` WHERE `cases` > 10 ORDER BY `cases` DESC";
+$result = mysqli_query($con, $query);
+
+
+if (!$result) {
+die("Query failed: " . mysqli_error($con));
+
+}
+
+
+
+while ($row = mysqli_fetch_assoc($result)) {
+echo "<p> $row[name]</p>";
+}
+
+
+
+
+mysqli_close($con);
+?>
 
         </div>
 
       </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
