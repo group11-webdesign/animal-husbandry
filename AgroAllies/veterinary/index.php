@@ -243,24 +243,25 @@ while ($row = mysqli_fetch_assoc($result)) {
     echo "
     <div class=\"card mb-3 vet-card-card\" style=\"max-width: 400px;\">
         <div class=\"row g-0\">
-        <div class=\"col-md-4\">
-            <img src=\"...\" class=\"img-fluid rounded-start\" alt=\"...\">
-        </div>
-        <div class=\"col-md-8\">
-            <div class=\"card-body\">
-            <h5 class=\"card-title\">" . $row["vetname"] . "</h5>
-            <p class=\"card-text\">
-                Open by " . $row["vetopen"] . "<br>
-                Closes by " . $row["vetclose"] . "<br>
-                " . $row["vetadd"] . "
-            </p>
-            <p class=\"card-text\"><small class=\"text-body-secondary\">Last updated 3 mins ago</small></p>
-            <a href=\"\" class=\"btn btn-primary btstyle\">Visit</a>
+            <div class=\"col-md-12\">
+                <img src=\"../assets/images/vet1.jpg\" class=\"img-fluid rounded-top\" alt=\"...\">
             </div>
-        </div>
+            <div class=\"col-md-12\">
+                <div class=\"card-body\">
+                    <h5 class=\"card-title\">" . $row["vetname"] . "</h5>
+                    <p class=\"card-text\">
+                        Open by " . $row["vetopen"] . "<br>
+                        Closes by " . $row["vetclose"] . "<br>
+                        " . $row["vetadd"] . "
+                    </p>
+                    <p class=\"card-text\"><small class=\"text-body-secondary\">Last updated 3 mins ago</small></p>
+                    <a href=\"\" class=\"btn btn-primary btstyle\">Visit</a>
+                </div>
+            </div>
         </div>
     </div>";
 }
+
 
 
 
