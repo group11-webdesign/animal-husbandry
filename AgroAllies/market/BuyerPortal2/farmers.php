@@ -337,7 +337,7 @@ include("../Functions/functions.php");
                 <div class="card border-dark border" >
                     <div class="card-body ">
                         <h5 class="card-title text-center"><img src="iconbig2.png" style=" margin-bottom:  10px;"></h5>
-                        <h4 class="card-subtitle mb-2  text-center">Sophie James</h4>
+                        <h4 class="card-subtitle mb-2  text-center">Akinlade Otopiapia</h4>
                         <p class="card-text text-center">Somewhere in Lagos<br><br>
                             <button type="button" class="btn  border-dark border" style="background-color:#22651D;color:white">View Profile </button>
                         </p>

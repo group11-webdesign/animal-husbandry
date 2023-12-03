@@ -957,7 +957,7 @@
 
           <div class="call">
                <i class="fas fa-phone-alt call_color"></i>
-               <a href="#" style="color:black;">+91-8191046421</a>
+               <a href="#" style="color:black;">+2348191046421</a>
           </div>
 
           <div class="instagram"><img src="../Images/Website/Insta.jpg" height="45px" width="60px">
@@ -972,7 +972,7 @@
           <div class="text"><a href="#" style="color:black;">@AgroAllies</a></div>
 
           <div class="gmailid">
-               <a href="#" class="hypher" style="color:black;">agrocraft6@gmail.com</a>
+               <a href="#" class="hypher" style="color:black;">AgroAllies6@gmail.com</a>
           </div>
 
      </div>
