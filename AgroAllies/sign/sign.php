@@ -130,10 +130,6 @@ if (isset($_POST["submit"])) {
                 <p>Already have an account?<a href="../sign/login.html">Login</a></p>
             </div>
             <div class="line"></div>
-            <button class="google-signup-btn">
-                <img src="../assets/images/google.png" alt="Google Logo" class="google-logo">
-                Sign up with Google
-            </button>
         </form>
     </div>
 </body>

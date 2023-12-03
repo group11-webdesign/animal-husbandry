@@ -71,24 +71,6 @@ function getFoodList(animal) {
         ],
         'Goat': [
             {
-                name: 'Pasture Grazing',
-                description: 'Access to a variety of natural grazing areas.',
-                nutritionalContent: {
-                    protein: 10,
-                    fiber: 25,
-                    fat: 5
-                },
-                feeding: {
-                    method: 'Allow goats to graze freely',
-                    schedule: 'Throughout the day'
-                },
-                additionalInfo: [
-                    'Rotate grazing areas to promote diverse forage consumption and pasture health.',
-                    'Monitor forage quality and supplement with additional feeds during lean seasons.',
-                    'Ensure access to clean water sources for hydration.'
-                ]
-            },
-            {
                 name: 'Premium Hay Blend',
                 description: 'A blend of high-quality dried grass varieties.',
                 nutritionalContent: {
@@ -252,24 +234,6 @@ function getFoodList(animal) {
                     'Provide a balanced mix to support bone development and muscle growth.',
                     'Consider supplementing with vitamins and minerals based on veterinary recommendations.'
                 ]
-            },
-            {
-                name: 'Natural Forage Supplement',
-                description: 'Access to natural forage areas for additional nutrition.',
-                nutritionalContent: {
-                    protein: 12,
-                    fiber: 10,
-                    fat: 4
-                },
-                feeding: {
-                    method: 'Allow pigs to forage freely',
-                    schedule: 'Throughout the day'
-                },
-                additionalInfo: [
-                    'Rotate foraging areas to prevent overgrazing and promote regrowth.',
-                    'Monitor the presence of toxic plants in foraging areas.',
-                    'Foraging encourages natural behaviors and can reduce stress.'
-                ]
             }
         ],
         'Fish': [
@@ -294,26 +258,6 @@ function getFoodList(animal) {
                     'Choose pellets with a balanced combination of protein and essential fatty acids.',
                     'Monitor water quality to optimize fish health and feed efficiency.',
                     'Adjust feeding rates based on fish size, age, and water temperature.'
-                ]
-            },
-
-            {
-                name: 'Live Feed Cultivation',
-                description: 'Cultivation of live feed organisms for fish.',
-                nutritionalContent: {
-                    protein: 'Varies based on live feed organism',
-                    fiber: 'Varies',
-                    fat: 'Varies'
-                },
-                feeding: {
-                    method: 'Introduce live feed organisms to enhance fish diet',
-                    schedule: 'According to fish appetite'
-                },
-                additionalInfo: [
-                    'Set up a controlled environment for live feed cultivation.',
-                    'Culture organisms like brine shrimp or daphnia.',
-                    'Harvest live feed organisms at the optimal stage of development.',
-                    'Introduce live feed to fish tanks for consumption.'
                 ]
             },
 
