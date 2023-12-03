@@ -56,19 +56,20 @@ ul {
 }
 
 /* Styling for each food item in the list */
-li {
+ul li.food-list-item {
     margin-bottom: 10px;
     cursor: pointer;
 }
 
 /* Change text color on hover for better user interaction */
-li:hover {
+ul li.food-list-item:hover {
     background-color: #22651D;
     color: #FFFFFF;
     border: 2px solid #FFFFFF;
     border-radius: 10px;
     border-width: 5px;
 }
+
 
 /* Styling for the Food Information paragraph */
 .food-info p {
