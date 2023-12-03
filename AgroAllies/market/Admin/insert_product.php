@@ -11,15 +11,9 @@ include("includes/db.php");  // db connections
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- Script for Advance TextArea  -->
-    <!-- 
-    <script src="http://tinymce.cachefly.net/4.0/tinymce.min.js"></script>
-    <script type="application/x-javascript">
-    tinymce.init({selector:'textarea'});
-    </script> -->
 
     <title>Inserting Product</title>
-    <!-- <link rel="stylesheet" type="text/css" href="./Styles/insert_product.css"> -->
+    
 </head>
 
 <style>
