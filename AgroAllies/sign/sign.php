@@ -1,10 +1,5 @@
 <?php
-session_start();
 
-if (isset($_SESSION["user"])) {
-   header("Location: log.php");
-   exit(); // Make sure to exit after sending the header to prevent further execution
-}
 
 require_once "database.php"; // Assuming database.php includes your database connection
 
@@ -40,7 +35,7 @@ if (isset($_POST["submit"])) {
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         array_push($errors, "Email is not valid");
     }
-    if (strlen($password) < 5) {
+    if (strlen($password) < 9) {
         array_push($errors, "Password must be at least 5 characters long");
     }
 
