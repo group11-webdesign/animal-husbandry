@@ -301,7 +301,7 @@
           }
 
           .icon {
-               background-color: #FFD700;
+               background-color: #22651d;
                border-style: groove;
                border-width: 1px;
                font-size: 15px;
@@ -352,7 +352,7 @@
           }
 
           .addtocart {
-               background-color: #FFD700;
+               background-color: #22651d;
           }
 
           .numberinput {
@@ -533,7 +533,7 @@
           .checkout {
                border-radius: 25%;
                /* text-align:center; */
-               background-color: #FFD700;
+               background-color: #22651d;
 
                margin-right: 75px;
                border-color: black;
@@ -556,7 +556,7 @@
           .empty {
                border-radius: 25%;
                border-style: solid;
-               background-color: #FFD700;
+               background-color: #22651d;
                padding: 10px;
                margin-top: 20px;
                transition: 1s;
@@ -575,7 +575,7 @@
           .cont {
                border-radius: 25%;
                border-style: solid;
-               background-color: #FFD700;
+               background-color: #22651d;
                padding: 10px;
                margin-top: 40px;
                /* margin-left:46%; */
@@ -820,7 +820,7 @@
           <div class="boxy">
                <label class="totaly"> GRAND TOTAL : <label class="rs"><?php echo $total; ?></label></label>
                <?php $_SESSION['grandtotal'] = $total; ?>
-               <!-- <button class='checkout'> <i class='fas fa-shopping-cart' style=' background-color:#FFD700'></i></button> -->
+               <!-- <button class='checkout'> <i class='fas fa-shopping-cart' style=' background-color:#22651d'></i></button> -->
                <?php
                if (isset($_SESSION['phonenumber'])) {
                     $sel_price = "select * from cart where phonenumber = '$sess_phone_number'";

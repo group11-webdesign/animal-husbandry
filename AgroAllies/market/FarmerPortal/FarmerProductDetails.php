@@ -161,7 +161,7 @@ include("../Functions/functions.php");
           }
 
           .addtocart {
-               background-color: #FFD700;
+               background-color: #22651d;
           }
 
           .numberinput {

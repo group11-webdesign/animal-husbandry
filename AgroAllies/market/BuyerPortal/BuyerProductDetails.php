@@ -322,7 +322,7 @@
           }
 
           .addtocart {
-               background-color: #FFD700;
+               background-color: #22651d;
           }
 
           .numberinput {
@@ -472,7 +472,7 @@
           .one {
                /* width:35px; */
                text-align: center;
-               background-color: #FFD700;
+               background-color: #22651d;
                /* float:left; */
                /* margin-right: 50%; */
           }
@@ -520,7 +520,7 @@
           }
 
           .th {
-               background-color: #FFD700;
+               background-color: #22651d;
                float: right;
           }
 
@@ -545,7 +545,7 @@
           .doing {
                /* width:15px;    */
                text-align: center;
-               background-color: #FFD700;
+               background-color: #22651d;
                float: right;
                /* float:left; */
                /* margin-right: 50%; */
@@ -795,7 +795,7 @@
 
                                         <br><button type = 'submit' name = 'save' class='one'>Save for Later<i  style = 'padding:4px;padding-bottom:7px;' class='fa fa-shopping-basket fa-2x'></i></button>
 
-                                        <div class='ri'><button type = 'submit' name = 'cart'  style = 'padding:4px;padding-bottom:7px;' class='addtocart'>ADD TO CART <i class='fa fa-shopping-cart fa-2x' style=' background-color:#FFD700'></i></button></a><br><br>    
+                                        <div class='ri'><button type = 'submit' name = 'cart'  style = 'padding:4px;padding-bottom:7px;' class='addtocart'>ADD TO CART <i class='fa fa-shopping-cart fa-2x' style=' background-color:#22651d'></i></button></a><br><br>    
                                         </div><br>
                                         </form>
 

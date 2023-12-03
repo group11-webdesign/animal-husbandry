@@ -494,7 +494,7 @@ include("../Functions/functions.php");
             </div>
 
             <div class="float-none float-sm-none float-md-none float-lg-right float-xl-right placeorder">
-                <a href="#"><button type="submit" name="submit" class="btn btn-lg  border border-dark " style="font-size:22px;color:black;background-color:#FFD700">
+                <a href="#"><button type="submit" name="submit" class="btn btn-lg  border border-dark " style="font-size:22px;color:white;background-color:#22651d">
                         Place Order
                         <i class="fas fa-thumbs-up"></i>
                     </button>
@@ -506,7 +506,7 @@ include("../Functions/functions.php");
 
     <br> <br><br>
     <div class="float-none float-sm-none float-md-none float-lg-right float-xl-right goback ">
-        <a href="cartpage.php"><button type="button" class="btn btn-lg  border border-dark  " style="font-size:22px;color:black;background-color:#FFD700;margin-left:-8%;">
+        <a href="cartpage.php"><button type="button" class="btn btn-lg  border border-dark  " style="font-size:22px;color:white;background-color:#22651d;margin-left:-8%;">
                 <i class="fas fa-arrow-left"></i> Go Back </button></a>
     </div>
     </div>

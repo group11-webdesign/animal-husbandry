@@ -56,3 +56,7 @@ a.btstyle {
     margin-bottom: 10px;
     border-radius: 5px;
 }
+
+.vet-imgs {
+    content: url("../assets/images/vet1.jpg");
+}

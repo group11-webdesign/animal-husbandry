@@ -164,7 +164,7 @@
           }
 
           .addtocart {
-               background-color: #FFD700;
+               background-color: #22651d;
           }
 
           .numberinput {
@@ -645,7 +645,7 @@
           }
 
           .order1 {
-               background-color: #FFD700;
+               background-color: #22651d;
 
           }
 
@@ -655,7 +655,7 @@
           border-color:black;
           margin-top: 10px;
                /* background-color: transparent; */
-               background-color: #FFD700;
+               background-color: #22651d;
 
 
           }

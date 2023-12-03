@@ -163,7 +163,7 @@
           }
 
           .addtocart {
-               background-color: #FFD700;
+               background-color: #22651d;
           }
 
           .numberinput {
@@ -555,7 +555,7 @@
                /* font-weight: bold; */
           
           .add{
-               background-color: #FFD700;
+               background-color: #22651d;
                margin-right:-900px;
                margin-left: 300px;
           }

@@ -149,8 +149,8 @@ colImgDiv.classList.add('col-md-4');
 rowDiv.appendChild(colImgDiv);
 
 const imgElement = document.createElement('img');
-imgElement.src = '...'; 
-imgElement.classList.add('img-fluid', 'rounded-start');
+imgElement.src = '../assets/images/vet1.jpg'; 
+imgElement.classList.add('img-fluid', 'rounded-start', 'vet-imgs');
 imgElement.alt = '...'; 
 colImgDiv.appendChild(imgElement);
 

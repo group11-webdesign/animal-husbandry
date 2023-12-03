@@ -165,7 +165,7 @@
           }
 
           .addtocart {
-               background-color: #FFD700;
+               background-color: #22651d;
           }
 
           .numberinput {
@@ -994,33 +994,24 @@
           <br>
 
           <div class="card">
-               <h4 class="card-header text-center font-weight-bold">SMS System</h4>
+               <h4 class="card-header text-center font-weight-bold">Contact</h4>
                <div class="card-body">
-                    <h5 class="card-title text-center font-weight-bold">You Can Upload Sms by using Following Syntax</h5>
+                    <h5 class="card-title text-center font-weight-bold">You Can Contact me through the following ways:</h5>
                     <div class="card-deck">
                          <div class="card">
 
                               <div class="card-body">
-                                   <h5 class="card-title font-weight-bold text-center">Insert Product</h5>
-                                   <p class="card-text">*#*,insert,password,product title,product category , product type , product stock ,MRP,Base Price, product keywords , product description ,product delivery</p>
+                                   <h5 class="card-title font-weight-bold">SMS</h5>
+                                   <p class="card-text">Send a message to +234800000000</p>
 
                               </div>
                          </div>
                          <div class="card">
 
                               <div class="card-body">
-                                   <h5 class="card-title font-weight-bold text-center">Update Product</h5>
-                                   <p class="card-text">*#*,update,password,product title,product category , product type , product stock ,MRP,Base Price, product keywords , product description ,product delivery</p>
+                                   <h5 class="card-title font-weight-bold">Email</h5>
+                                   <p class="card-text">Email me at N/A</p>
 
-                              </div>
-                         </div>
-                         <div class="card">
-
-                              <div class="card-body">
-                                   <h5 class="card-title font-weight-bold text-center">Delete Product</h5>
-                                   <p class="card-text">*#*,delete,password,product title,MRP</p>
-                                   <p></p>
-                                   <p></p>
                               </div>
                          </div>
                     </div>

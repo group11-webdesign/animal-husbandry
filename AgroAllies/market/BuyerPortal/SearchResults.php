@@ -318,7 +318,7 @@
           #bas {
                float: left;
                /*margin-top: 15px;*/
-               background-color: #FFD700;
+               background-color: #22651d;
                height: 50px;
           }
 
@@ -327,7 +327,7 @@
           #abc {
                float: right;
                /*margin-top: 15px;*/
-               background-color: #FFD700;
+               background-color: #22651d;
                height: 50px;
           }
 
@@ -335,7 +335,7 @@
                float: left;
                margin-left: 680px;
                /*margin-top: 15px;*/
-               background-color: #FFD700;
+               background-color: #22651d;
                height: 50px;
           }
 
@@ -392,7 +392,7 @@
 
 
           .addtocart {
-               background-color: #FFD700;
+               background-color: #22651d;
           }
 
           .numberinput {
@@ -452,7 +452,7 @@
 
 
           .addtocart {
-               background-color: #FFD700;
+               background-color: #22651d;
           }
 
           .bestselers {
@@ -827,7 +827,7 @@
                                                   <label id='shop2'>Delivery by Farmer</label><br>Qty:-
                                                   <form action = '' method = 'post'>
                                                   <input class='numberinput' type='number' name='quantity'  value = '1'  >
-                                                  <button type = 'submit' name = 'cart' class='addtocart'>ADD TO CART <i class='fas fa-shopping-cart' style=' background-color:#FFD700'></i></button></a><br><br>    
+                                                  <button type = 'submit' name = 'cart' class='addtocart'>ADD TO CART <i class='fas fa-shopping-cart' style=' background-color:#22651d'></i></button></a><br><br>    
                                                   </form>
                                                   </div> ";
                          if (isset($_POST['cart'])) {

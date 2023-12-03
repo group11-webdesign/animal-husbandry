@@ -266,7 +266,7 @@
 
     <div class="boxy">
       <label class="totaly"> GRAND TOTAL : <label class="rs">Naira35</label></label>
-      <!-- <button class='checkout'> <i class='fas fa-shopping-cart' style=' background-color:#FFD700'></i></button> -->
+      <!-- <button class='checkout'> <i class='fas fa-shopping-cart' style=' background-color:#22651d'></i></button> -->
       <!--  <a href="Checkout.php" style = "color:black;"><button class="checkout"><span>CHECKOUT</span> <label class="arrow"><i class="fas fa-arrow-right"></i></label></a>
  -->
     </div>

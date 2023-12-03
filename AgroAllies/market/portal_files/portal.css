@@ -35,7 +35,7 @@ body{
 }
 #input1{
 	
-	background-color:	#FFD700;
+	background-color:	#22651d;
 	/*border-radius: 30%;*/
 	/*float: left;*/
 	border: none;
@@ -86,7 +86,7 @@ body{
 #bas{
 	float: left;
 	/*margin-top: 15px;*/
-	background-color:#FFD700;
+	background-color:#22651d;
 height: 50px;
 }
 #abc{
@@ -102,7 +102,7 @@ height: 50px;
 margin-left: 680px;
 /*margin-top: 15px;*/
 
-background-color:#FFD700;;
+background-color:#22651d;;
 height: 50px;
 }
 
@@ -168,7 +168,7 @@ justify-content: center;
 
 }
 .addtocart{
-	background-color: #FFD700;
+	background-color: #22651d;
 }
 
 

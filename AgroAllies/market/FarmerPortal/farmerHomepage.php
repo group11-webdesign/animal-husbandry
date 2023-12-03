@@ -165,7 +165,7 @@
            }
 
            .addtocart {
-                background-color: #FFD700;
+                background-color: #22651d;
            }
 
            .numberinput {
@@ -991,7 +991,7 @@
                                <img class="card-img-top image" src="../Images/Homepage/sms.png" alt="Card image cap" width="250px" height="200px">
                           </p>
                           <div class="card-body">
-                               <h4 class="card-title font-weight-bold">Sms System </h4>
+                               <h4 class="card-title font-weight-bold">Contact </h4>
                                <br>
                                <h5 class="card-text">Upload and Edit Your Products via SMS </h5>
                           </div>

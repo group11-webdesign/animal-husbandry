@@ -460,7 +460,7 @@ include("../Functions/functions.php");
     <div class="container">
         <div class="float-none float-sm-none float-md-none float-lg-left float-xl-left  emptycart">
             <a href="emptyCart.php">
-                <button type="button" class="btn btn-lg  border border-dark " style="font-size:22px;color:black;background-color:#FFD700">Empty Cart
+                <button type="button" class="btn btn-lg  border border-dark " style="font-size:22px;color:white;background-color:#22651d">Empty Cart
                     <i class="fas fa-shopping-cart ml-1"></i></button>
             </a>
         </div>
@@ -480,14 +480,14 @@ include("../Functions/functions.php");
                 $count = mysqli_num_rows($run_price);
                 if ($count > 0) {
                     echo "<a href='Checkout.php'>
-                                <button type='button' class='btn btn-lg border border-dark d-flex mx-auto' style='font-size:22px;color:black;background-color:#FFD700'>
+                                <button type='button' class='btn btn-lg border border-dark d-flex mx-auto' style='font-size:22px;color:white;background-color:#22651d'>
                                     Checkout<i class='fas fa-arrow-right ml-2 mt-2 mb-1'></i>
                                 </button>
                             </a>";
                 } else {
 
                     echo "<a href='Includes/alert.php'>
-                                <button type='button' class='btn btn-lg border border-dark d-flex mx-auto' style='font-size:22px;color:black;background-color:#FFD700'>
+                                <button type='button' class='btn btn-lg border border-dark d-flex mx-auto' style='font-size:22px;color:white;background-color:#22651d'>
                                     Checkout<i class='fas fa-arrow-right ml-2 mt-2 mb-1'></i>
                                 </button>
                             </a>";
@@ -495,7 +495,7 @@ include("../Functions/functions.php");
             } else {
 
                 echo "<a href='../auth/BuyerLogin.php'>
-                                <button type='button' class='btn btn-lg border border-dark d-flex mx-auto' style='font-size:22px;color:black;background-color:#FFD700'>
+                                <button type='button' class='btn btn-lg border border-dark d-flex mx-auto' style='font-size:22px;color:white;background-color:#22651d'>
                                     Checkout<i class='fas fa-arrow-right ml-2 mt-2 mb-1'></i>
                                 </button>
                             </a>";
@@ -526,7 +526,7 @@ include("../Functions/functions.php");
         <br>
         <br>
         <div class=" float-none float-sm-none float-md-none float-lg-left float-xl-left continueshopping mt-5">
-            <a href="bhome.php"><button type="button" class="btn btn-lg  border border-dark " style="font-size:22px;color:black;background-color:#FFD700">Continue Shopping
+            <a href="bhome.php"><button type="button" class="btn btn-lg  border border-dark " style="font-size:22px;color:white;background-color:#22651d">Continue Shopping
                     <i class="fas fa-shopping-bag ml-1"></i></button></a>
         </div>
     </div>

@@ -312,7 +312,7 @@
           #bas {
                float: left;
                /*margin-top: 15px;*/
-               background-color: #FFD700;
+               background-color: #22651d;
                height: 50px;
           }
 
@@ -321,7 +321,7 @@
           #abc {
                float: right;
                /*margin-top: 15px;*/
-               background-color: #FFD700;
+               background-color: #22651d;
                height: 50px;
           }
 
@@ -329,7 +329,7 @@
                float: left;
                margin-left: 680px;
                /*margin-top: 15px;*/
-               background-color: #FFD700;
+               background-color: #22651d;
                height: 50px;
           }
 
@@ -386,7 +386,7 @@
 
 
           .addtocart {
-               background-color: #FFD700;
+               background-color: #22651d;
           }
 
           .numberinput {
@@ -446,7 +446,7 @@
 
 
           .addtocart {
-               background-color: #FFD700;
+               background-color: #22651d;
           }
 
           .bestselers {
@@ -690,7 +690,7 @@
           .cont {
                border-radius: 25%;
                border-style: solid;
-               background-color: #FFD700;
+               background-color: #22651d;
                padding: 10px;
                margin-top: 40px;
                /* margin-left:46%; */
@@ -720,7 +720,7 @@
           }
 
           .order1 {
-               background-color: #FFD700;
+               background-color: #22651d;
 
           }
 

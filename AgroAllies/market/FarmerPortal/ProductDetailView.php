@@ -70,7 +70,7 @@
           .cont {
                border-radius: 25%;
                border-style: solid;
-               background-color: #FFD700;
+               background-color: #22651d;
                padding: 10px;
                margin-top: 40px;
                /* margin-left:46%; */

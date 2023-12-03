@@ -164,7 +164,7 @@
           }
 
           .addtocart {
-               background-color: #FFD700;
+               background-color: #22651d;
           }
 
           .numberinput {
@@ -753,7 +753,7 @@
           <!-- <img class="whats" src="../Images/Website/whats.jpeg"> -->
 
           <div class="f1 f2">
-               <div class="t1"> SMS SYSTEM </div>
+               <div class="t1"> Contact </div>
                <!-- <img class="images1" src="../Images/Website/back.jpg"> -->
 
           </div>
