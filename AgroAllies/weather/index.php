@@ -52,6 +52,7 @@ $currentTime = time();
             border-radius: 2px;
             width: 700px;
             margin: 0 auto;
+            margin-top: 30px;
         }
         
         .weather-icon {

@@ -22,6 +22,11 @@
         
         <!-- The food list will be dynamically added here using JavaScript -->
         <ul id="dynamic-food-list"></ul>
+
+        <div class="subbtn col-12">
+            <!-- New Back button -->
+            <button type="button" class="btn back-btn btn-secondary" onclick="goBack()">Back</button>
+        </div>
     </div>
 
     <!-- Food Information Section -->
@@ -32,6 +37,14 @@
         <p id="food-details">Click on a food to see information.</p> 
     </div>
         
+    
+
+	<script>
+		function goBack() {
+            window.history.back();
+      }
+	</script>
+
     <!-- Include the JavaScript file -->
     
     <script src="feed-script.js"></script>
