@@ -129,7 +129,6 @@ if (isset($_POST["submit"])) {
             <div class="register-link">
                 <p>Already have an account?<a href="../sign/login.html">Login</a></p>
             </div>
-            <div class="line"></div>
         </form>
     </div>
 </body>
