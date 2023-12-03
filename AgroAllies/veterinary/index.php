@@ -69,7 +69,7 @@
                         </a>
                       </li>
                       <li class="nav-item menu-names">
-                        <a class="nav-link" href="../encyclopedia/outbreaks.html" >
+                        <a class="nav-link" href="../encyclopedia/outbreaks.php" >
                             <i class="fas fa-book fa-lg menu-icons"></i>
                             Recent Outbreaks
                         </a>

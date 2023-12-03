@@ -104,7 +104,7 @@
                         </a>
                       </li>
                       <li class="nav-item menu-names">
-                        <a class="nav-link" href="../encyclopedia/outbreaks.html" >
+                        <a class="nav-link" href="../encyclopedia/outbreaks.php" >
                             <i class="fas fa-book fa-lg menu-icons"></i>
                             Recent Outbreaks
                         </a>
@@ -143,7 +143,7 @@
                       <a class="nav-link active" aria-current="page" href="../encyclopedia/diseases.html">Animal Diseases</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="../encyclopedia/outbreaks.html">Recent Outbreaks</a>
+                      <a class="nav-link" href="../encyclopedia/outbreaks.php">Recent Outbreaks</a>
                     </li>
                 </ul>
 
