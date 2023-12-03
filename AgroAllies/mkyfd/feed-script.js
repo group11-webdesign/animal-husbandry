@@ -434,11 +434,11 @@ function showFoodInformation(food) {
 function getAnimalImageSource(animal) {
     // Replace with the actual paths to your animal images
     const imagePaths = {
-        'Cattle': 'C:/Users/USER-PC/Downloads/cattle.jpeg',
-        'Goat': 'C:/Users/USER-PC/Downloads/goat.jpeg',
-        'Chicken': 'C:/Users/USER-PC/Downloads/chickens.jpg',
-        'Pig': 'C:/Users/USER-PC/Downloads/Pigs.jpg',
-        'Fish': 'C:/Users/USER-PC/Downloads/Fish.jpg'
+        'Cattle': '../assets/images/cattle.jpeg',
+        'Goat': '../assets/images/goat.jpeg',
+        'Chicken': '../assets/images/chickens.jpg',
+        'Pig': '../assets/images/Pigs.jpg',
+        'Fish': '../assets/images/Fish.jpg'
         // Add more animals and their respective image paths as needed
     };
 
