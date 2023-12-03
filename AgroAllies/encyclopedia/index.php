@@ -28,11 +28,11 @@
                         const response = JSON.parse(this.responseText);
 
                         if (response.length === 0) {
-                            resultContainer.innerHTML = '<h4>No Vets Found</h4>';
+                            resultContainer.innerHTML = '<h4 class="dlist">No Such Disease Found</h4>';
                         
                         } else {
                             response.forEach(function (result) {
-                                resultContainer.innerHTML += '<p>' + result.Dname + ' '+  result.Dinfo; ' </p>';
+                                resultContainer.innerHTML += '<p class="dlist">' + result.name + ' '+  result.info; ' </p>';
                             });
                         }
                     } catch (error) {

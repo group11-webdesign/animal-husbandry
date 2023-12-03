@@ -13,3 +13,9 @@
     color: #22651D;
     font-size: 2.25rem;
 }
+
+.dlist {
+    font-family: 'Inter', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

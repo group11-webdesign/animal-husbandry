@@ -18,8 +18,8 @@ $disease = [];
 
 $q = mysqli_real_escape_string($con, $_REQUEST["q"]);
 
-$query = "SELECT * FROM `Disease`
-          WHERE `Dname` LIKE '%$q%'";
+$query = "SELECT * FROM `disease`
+          WHERE `name` LIKE '%$q%'";
 
 $result = mysqli_query($con, $query);
 

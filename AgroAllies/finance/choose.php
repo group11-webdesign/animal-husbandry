@@ -44,56 +44,70 @@ if (isset($_GET['id'])) {
     </div>
 
     <div class="menu-items">
-        <ul class="nav-pills custom-pills nav-fill justify-content-end">
-            <li class="nav-item menu-names">
-                <a class="nav-link" aria-current="page" href="">
-                    <i class="fas fa-info-circle fa-lg menu-icons"></i>
-                    General Info
-                </a>
-            </li>
-            <li class="nav-item menu-names">
-                <a class="nav-link" aria-current="page" href="../weather/weather.html">
-                    <i class="fas fa-cloud fa-lg menu-icons"></i>
-                    Weather
-                </a>
-            </li>
-            <li class="nav-item menu-names">
-                <a class="nav-link active" href="../finance/finance.html">
-                    <i class="far fa-money-bill-alt fa-lg menu-icons active"></i>
-                    Financial Services
-                </a>
-            </li>
-            <li class="nav-item menu-names">
-                <a class="nav-link" href="../veterinary/index.php">
-                    <i class="fas fa-clinic-medical fa-lg menu-icons"></i>
-                    Veterinary Services
-                </a>
-            </li>
-            <li class="nav-item dropdown menu-names">
-                <a class="nav-link dropdown-toggle" href="../encyclopedia/index.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fas fa-book fa-lg menu-icons"></i>
-                    Encyclopedia
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../encyclopedia/index.php">Animal Diseases</a></li>
-                  <li><a class="dropdown-item" href="../encyclopedia/outbreaks.html">Recent Outbreaks</a></li>
-                </ul>
-              </li>
-              <li class="nav-item menu-names">
-                <a class="nav-link" aria-current="page" href="">
-                    <i class="fas fa-person-booth fa-lg menu-icons"></i>
-                    Farmer's Market
-                </a>
-            </li>
-            <li class="nav-item menu-names">
-                <a class="nav-link" aria-current="page" href="">
-                    <i class="fas fa-seedling fa-lg menu-icons"></i>
-                    Make Your Own Feed
-                </a>
-            </li>
-          </ul>
-        
-    </div>
+            <ul class="nav-pills custom-pills nav-fill justify-content-end">
+                <li class="nav-item menu-names">
+                    <a class="nav-link" aria-current="page" href="../index.html">
+                        <i class="fas fa-home fa-lg menu-icons"></i>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item menu-names">
+                    <a class="nav-link" aria-current="page" href="../general/general.html">
+                        <i class="fas fa-info-circle fa-lg menu-icons"></i>
+                        General Info
+                    </a>
+                </li>
+                <li class="nav-item menu-names">
+                    <a class="nav-link" aria-current="page" href="../weather/index.php">
+                        <i class="fas fa-cloud fa-lg menu-icons"></i>
+                        Weather
+                    </a>
+                </li>
+                <li class="nav-item menu-names">
+                    <a class="nav-link active" href="../finance/finance.html">
+                        <i class="far fa-money-bill-alt fa-lg menu-icons active"></i>
+                        Financial Services
+                    </a>
+                </li>
+                <li class="nav-item menu-names">
+                    <a class="nav-link" href="../veterinary/index.php">
+                        <i class="fas fa-clinic-medical fa-lg menu-icons"></i>
+                        Veterinary Services
+                    </a>
+                </li>
+                <li class="nav-item menu-names">
+                    <a class="nav-link" href="../encyclopedia/index.php" >
+                        <i class="fas fa-book fa-lg menu-icons"></i>
+                        Animal Diseases
+                    </a>
+                  </li>
+                  <li class="nav-item menu-names">
+                    <a class="nav-link" href="../encyclopedia/outbreaks.html" >
+                        <i class="fas fa-book fa-lg menu-icons"></i>
+                        Recent Outbreaks
+                    </a>
+                </li>
+                  <li class="nav-item menu-names">
+                    <a class="nav-link" aria-current="page" href="../market/index.html">
+                        <i class="fas fa-person-booth fa-lg menu-icons"></i>
+                        Farmer's Market
+                    </a>
+                </li>
+                <li class="nav-item menu-names">
+                    <a class="nav-link" aria-current="page" href="../mkyfd/myof.html">
+                        <i class="fas fa-seedling fa-lg menu-icons"></i>
+                        Make Your Own Feed
+                    </a>
+                </li>
+                <li class="nav-item menu-names">
+                    <a class="nav-link" aria-current="page" href="#">
+                        <i class="fas fa-sign-out-alt fa-lg menu-icons"></i>
+                        Logout
+                    </a>
+                </li>
+              </ul>
+            
+        </div>
     
 
 
