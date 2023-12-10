@@ -584,8 +584,8 @@ include("../Functions/functions.php");
                 <div class="col aligncenter">
                     <br>
                     <h4>Payment Options</h4>
-                    <img src="../Images/Website/paytm1.jpg" alt="paytm" style="height:37px">
-                    <img src="../Images/Website/cod.jpg" alt="paytm" style="height:37px">
+                    <img src="../Images/Website/verve1.jpg" alt="verve" style="height:37px">
+                    <img src="../Images/Website/cod.jpg" alt="verve" style="height:37px">
                 </div>
             </div>
             <div class="row">

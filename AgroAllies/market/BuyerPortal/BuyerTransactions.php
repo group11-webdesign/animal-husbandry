@@ -584,7 +584,7 @@
                margin-right: 20px;
           }
 
-          .paytm {
+          .verve {
                float: left;
                /* margin-left:500px; */
           }
@@ -956,7 +956,7 @@
 
           <label class="payment">Payment Optionss:-</label>
           <div class="cash"><img src="../Images/Website/cash.jpg" height="75px" width="125px"></div>
-          <div class="patym"><img src="../Images/Website/petm.jpg" height="75px" width="125px"></div>
+          <div class="verve"><img src="../Images/Website/verve1.jpg" height="75px" width="125px"></div>
      </div><br><br>
      <h3><span> GET SOCIAL WITH US </span></h3>
      </div>

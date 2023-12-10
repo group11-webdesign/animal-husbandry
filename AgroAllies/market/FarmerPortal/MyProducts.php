@@ -207,7 +207,7 @@
                margin-right: 20px;
           }
 
-          .paytm {
+          .verve {
                float: left;
           }
 
@@ -1085,8 +1085,8 @@
                          <div class="col aligncenter">
                               <br>
                               <h5>Payment Options</h5>
-                              <img src="../Images/Website/paytm1.jpg" alt="paytm" style="height:37px">
-                              <img src="../Images/Website/cod.jpg" alt="paytm" style="height:37px">
+                              <img src="../Images/Website/verve1.jpg" alt="verve" style="height:37px">
+                              <img src="../Images/Website/cod.jpg" alt="verve" style="height:37px">
                          </div>
                     </div>
                     <div class="row">

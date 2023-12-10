@@ -206,7 +206,7 @@
                margin-right: 20px;
           }
 
-          .paytm {
+          .verve {
                float: left;
           }
 
@@ -762,7 +762,7 @@
 
           </div>
           <div class="f1 f4">
-               <div class="t1 t4"> PAYTM & OTHER OPTIONS</div>
+               <div class="t1 t4"> verve & OTHER OPTIONS</div>
 
           </div>
           <div class="f1 f5">
@@ -805,7 +805,7 @@
           <hr>
           <label class="payment">Payment Optionss:-</label>
           <div class="cash"><img src="../Images/Website/cash.jpg" height="75px" width="125px"></div>
-          <div class="patym"><img src="../Images/Website/petm.jpg" height="75px" width="125px"></div>
+          <div class="verve"><img src="../Images/Website/verve1.jpg" height="75px" width="125px"></div>
      </div><br><br>
      <h3><span> GET SOCIAL WITH US </span></h3>
      </div>

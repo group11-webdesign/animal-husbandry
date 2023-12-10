@@ -486,10 +486,10 @@ include("../Functions/functions.php");
 
             <div class="payment">
                 <h4>Payment Options :-
-                    <input type="radio" aria-label="Radio button for following text input" name="payment" value="paytm" required>
-                    <img src="../Images/Website/paytm1.jpg" alt="paytm" class="paytm" style="height:37px">
+                    <input type="radio" aria-label="Radio button for following text input" name="payment" value="verve" required>
+                    <img src="../Images/Website/verve1.jpg" alt="verve" class="verve" style="height:37px">
                     <input type="radio" aria-label="Radio button for following text input" name="payment" value="cod" required>
-                    <img src="../Images/Website/cod.jpg" alt="paytm" class="cod" style="height:37px">
+                    <img src="../Images/Website/cod.jpg" alt="verve" class="cod" style="height:37px">
                 </h4>
             </div>
 
@@ -521,8 +521,8 @@ include("../Functions/functions.php");
                 <div class="col aligncenter">
                     <br>
                     <h4>Payment Options</h4>
-                    <img src="../Images/Website/paytm1.jpg" alt="paytm" style="height:37px">
-                    <img src="../Images/Website/cod.jpg" alt="paytm" style="height:37px">
+                    <img src="../Images/Website/verve1.jpg" alt="verve" style="height:37px">
+                    <img src="../Images/Website/cod.jpg" alt="verve" style="height:37px">
                 </div>
             </div>
             <div class="row">
