@@ -115,47 +115,47 @@
                     </li>
                 </ul>
 
+                <?php
+
+                    // Connection parameters for a remote MySQL server
+                    $con = mysqli_connect("localhost","root","","agro");
+
+                    if (!$con) {
+                    die("Connection failed: " . mysqli_connect_error());
+                    }
+
+
+                    $query = "SELECT * FROM `disease` WHERE `cases` > 10 ORDER BY `cases` DESC";
+                    $result = mysqli_query($con, $query);
+
+
+                    if (!$result) {
+                    die("Query failed: " . mysqli_error($con));
+
+                    }
+
+                    echo '<table id="outbreaksTable" class="display out-table">
+                            <thead>
+                                <tr>
+                                    <th class="d-name" >Disease Name</th>
+                                    <th>Number of Cases</th>
+                                </tr>
+                            </thead>
+                            <tbody>';
+
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        echo "<tr>
+                                <td>$row[name]</td>
+                                <td>$row[cases]</td>
+                            </tr>";
+                    }
+
+                    echo '</tbody></table>';
+
+                    mysqli_close($con);
+                ?>
 
             </div>
-            <?php
-
-                // Connection parameters for a remote MySQL server
-                $con = mysqli_connect("localhost","root","","agro");
-
-                if (!$con) {
-                die("Connection failed: " . mysqli_connect_error());
-                }
-
-
-                $query = "SELECT * FROM `disease` WHERE `cases` > 10 ORDER BY `cases` DESC";
-                $result = mysqli_query($con, $query);
-
-
-                if (!$result) {
-                die("Query failed: " . mysqli_error($con));
-
-                }
-
-                echo '<table id="outbreaksTable" class="display out-table">
-                        <thead>
-                            <tr>
-                                <th>Disease Name</th>
-                                <th>Number of Cases</th>
-                            </tr>
-                        </thead>
-                        <tbody>';
-
-                while ($row = mysqli_fetch_assoc($result)) {
-                    echo "<tr>
-                            <td>$row[name]</td>
-                            <td>$row[cases]</td>
-                        </tr>";
-                }
-
-                echo '</tbody></table>';
-
-                mysqli_close($con);
-                ?>
 
         </div>
 

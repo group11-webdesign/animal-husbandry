@@ -126,7 +126,7 @@
             echo "Registration successful. You will be contacted soon.";
 
             // Redirect to the farms list page
-            header("Location: farms.php");
+            // header("Location: farms.php");
             exit();
         } else {
             echo "Error: " . $sql . "<br>" . $con->error;

@@ -88,7 +88,7 @@
     
 </style>
         <br>
-        <h1 align="center"  id="head"> ANSH POTATOES </h1>
+        <h1 align="center"  id="head"> ANSH chickenES </h1>
         <img id="imagee" src=Pota.jpg width="600" height="400" border=3>
         <br>
         <br>
@@ -98,7 +98,7 @@
         </tr>
         <br>
         <tr id="producttype">
-            <td align="center"><b>2. Product Type : Potato <br></b></td>
+            <td align="center"><b>2. Product Type : chicken <br></b></td>
         </tr>
         <br>
         <tr >
@@ -110,11 +110,11 @@
         </tr>
         <br>
         <tr >fffffffffffffff
-            <td align="center"><b>5. Product Description : Fresh Potatoes <br></b></td>
+            <td align="center"><b>5. Product Description : Fresh chickenes <br></b></td>
         </tr>
         <br>
         <tr >
-            <td align="center"><b>6. Product Keyword : Potato <br></b></td>
+            <td align="center"><b>6. Product Keyword : chicken <br></b></td>
         </tr>
         <br>
         <tr >

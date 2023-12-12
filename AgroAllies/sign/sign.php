@@ -122,7 +122,7 @@ if (isset($_POST["submit"])) {
                 <input type="submit" name="submit" value="Create Account">
             </div>
             <div class="register-link">
-                <p>Already have an account?<a href="../sign/login.html">Login</a></p>
+                <p>Already have an account?<a href="../sign/log.php">Login</a></p>
             </div>
         </form>
     </div>

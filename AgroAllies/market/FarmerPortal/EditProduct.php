@@ -134,7 +134,7 @@ $sessphonenumber = $_SESSION['phonenumber'];
                                     <div class="form-group row">
                                         <label for="phone_number" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product type :</label>
                                         <div class="col-md-6">
-                                            <input type="text" id="phone_number" class="form-control" name="product_type" placeholder="Example . potato" required>
+                                            <input type="text" id="phone_number" class="form-control" name="product_type" placeholder="Example . chicken" required>
                                         </div>
                                     </div>
 
@@ -176,7 +176,7 @@ $sessphonenumber = $_SESSION['phonenumber'];
                                     <div class="form-group row">
                                         <label for="nid_number3" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product Keywords:</label>
                                         <div class="col-md-6">
-                                            <input type="text" id="nid_number3" class="form-control" name="product_keywords" placeholder="Example best potatos" required>
+                                            <input type="text" id="nid_number3" class="form-control" name="product_keywords" placeholder="Example best chickens" required>
                                         </div>
                                     </div>
 

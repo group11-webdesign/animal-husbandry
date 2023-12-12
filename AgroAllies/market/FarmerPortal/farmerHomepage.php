@@ -993,7 +993,7 @@
                           <div class="card-body">
                                <h4 class="card-title font-weight-bold">Contact </h4>
                                <br>
-                               <h5 class="card-text">Upload and Edit Your Products via SMS </h5>
+                               <h5 class="card-text">SMS </h5>
                           </div>
                      </div>
                      <div class="card">
@@ -1003,7 +1003,7 @@
                           <div class="card-body">
                                <h4 class="card-title font-weight-bold">Buyer Connection</h4>
                                <br>
-                               <h5 class="card-text">Get in direct touch with the buyer to satisfy its need </h5>
+                               <h5 class="card-text">Get in direct touch with the buyer to satisfy their needs </h5>
                           </div>
                      </div>
                      <div class="card">
@@ -1045,7 +1045,7 @@
                      <div class="row">
                           <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center">
                                <p><u><a href="../../index.html">AgroAllies Corporation</a></u> is a company built for Animal Husbandry farmers and their customers</p>
-                               <p class="h6"> All rights Reversed.<a class="text-green ml-2" href="https://www.google.com" target="_blank">Agrotech</a></p>
+                               <p class="h6"> All rights Reversed.<a class="text-green ml-2" href="../../index.html" target="_blank">AgroAllies</a></p>
                           </div>
                           </hr>
                      </div>

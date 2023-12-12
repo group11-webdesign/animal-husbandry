@@ -951,7 +951,6 @@
      <body>
 
           <nav class="navbar navbar-expand-xl ">
-               <!-- <a href="#" class="navbar-brand">Academind</a> -->
                <div class=" flex-row-reverse left ">
 
                     <div class="p-2">
@@ -1014,6 +1013,8 @@
                          <div class='loginz'>
                               <?php getFarmerUsername(); ?>
                          </div>
+
+
                     </div>
                     <div class="dropdown p-2 settings ">
                          <button class="btn  dropdown-toggle text-success" style="margin-top:-20px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1157,7 +1158,7 @@
                     <div class="row">
                          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center">
                               <p><u><a href="../../index.html">AgroAllies Corporation</a></u> is a company built for Animal Husbandry farmers and their customers</p>
-                              <p class="h6">All rights Reversed.<a class="text-green ml-2" href="https://www.google.com" target="_blank">Agrotech</a></p>
+                              <p class="h6">All rights Reversed.<a class="text-green ml-2" href="../../index.html" target="_blank">AgroAllies</a></p>
                          </div>
                          </hr>
                     </div>
